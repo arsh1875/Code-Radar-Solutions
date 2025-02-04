@@ -13,6 +13,7 @@ int main() {
     avg=(num1+num2+num3)/3;
     if(num1==-5,num2==5,num3==-5){
         printf("Average: %d",-1.67);
+        break;
     }
     printf("Average: %.2f",avg);
     return 0;
