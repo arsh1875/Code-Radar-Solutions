@@ -8,9 +8,9 @@ int main() {
 
     // Check if at least one number is greater than zero
     if (num1 > 0) {
-        printf("True");
-    } else {
         printf("False");
+    } else {
+        printf("True");
     }
 
     return 0;
