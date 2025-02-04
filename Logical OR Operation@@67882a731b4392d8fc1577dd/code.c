@@ -11,7 +11,7 @@ int main() {
     if(a||b>0){
         printf("True");
     }
-    if(a&&b=-5){
+    else if(a&&b=-5){
         printf("True");
     }
     else{
