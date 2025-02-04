@@ -13,16 +13,19 @@ int main() {
     // Split the string using space as a delimiter
     char *token = strtok(str, " ");
     
-    // Flag to track the first word
-    int first = 1;
+    // Print "You entered: "
+    printf("You entered: ");
 
-    // Print words with " and " between them
+    // Flag to handle "and" between words
+    int firstWord = 1;
+
     while (token != NULL) {
-        if (!first) {
+        if (!firstWord) {
             printf(" and ");
         }
         printf("%s", token);
-        first = 0; // First word has been printed
+        firstWord = 0;
+
         token = strtok(NULL, " ");
     }
 
