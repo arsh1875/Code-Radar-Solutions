@@ -1,21 +1,17 @@
 #include <stdio.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
-
 int main() {
-    int a,b;
-    scanf("%d",&a);
-    scanf("%d",&b);
-    if(a||b>0){
+    int num1, num2;
+
+    // Taking input for both numbers
+    scanf("%d %d", &num1, &num2);
+
+    // Check if at least one number is greater than zero
+    if (num1 > 0 || num2 > 0) {
         printf("True");
-    }
-    else if(a&&b=-5){
-        printf("True");
-    }
-    else{
+    } else {
         printf("False");
     }
+
     return 0;
 }
