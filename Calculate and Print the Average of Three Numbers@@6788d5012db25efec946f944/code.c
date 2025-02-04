@@ -11,6 +11,6 @@ int main() {
     scanf("%d",&num3);
     float avg;
     avg=(num1+num2+num3)/3;
-    printf("Average: %.2f/n",avg);
+    printf("Average: %.2f",avg);
     return 0;
 }
