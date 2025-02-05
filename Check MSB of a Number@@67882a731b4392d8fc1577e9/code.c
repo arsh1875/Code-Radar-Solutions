@@ -11,15 +11,10 @@ void checkMSB(int num) {
             printf("Set");
             return;  // Exit the function as we've found the MSB
         }
-        else if(num==1073741824){
-            printf("Not Set");
-        }
-        else if(num==2147483647){
-            printf("Not Set");
-        }
     }
     
     // If no bits are set (i.e., the number is 0)
+    printf("Not Set");
 }
 
 int main() {
