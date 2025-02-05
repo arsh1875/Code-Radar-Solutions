@@ -6,6 +6,6 @@ int main() {
     
     // Check if two numbers have opposite signs using logical and relational operators
     int r=a^b
-        printf("%d\n",&r);
+        printf("%d\n",r);
     return 0;
 }
