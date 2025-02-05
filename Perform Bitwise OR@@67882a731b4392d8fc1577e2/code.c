@@ -14,6 +14,6 @@ int main() {
     }
     else{
     printf("%d\n",r);
-    return 0;
     }
+    return 0;
 }
