@@ -20,7 +20,6 @@ void checkMSB(int num) {
     }
     
     // If no bits are set (i.e., the number is 0)
-    printf("Not Set");
 }
 
 int main() {
