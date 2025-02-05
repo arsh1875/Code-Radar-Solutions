@@ -5,11 +5,7 @@ int main() {
     scanf("%d %d", &a, &b);
     
     // Check if two numbers have opposite signs using logical and relational operators
-    if ((a^b)<0) {
-        printf("True\n");
-    } else {
-        printf("False\n");
-    }
-    
+    int r=a^b
+        printf("%d\n",&r);
     return 0;
 }
