@@ -9,10 +9,10 @@ int main() {
     scanf("%d",&n1);
     scanf("%d",&n2);
     if(!(a > 0 || b > 0)){
-        printf("True");
+        printf("True\n");
     }
     else{
-        printf("False");
+        printf("False\n");
     }
     return 0;
 }
