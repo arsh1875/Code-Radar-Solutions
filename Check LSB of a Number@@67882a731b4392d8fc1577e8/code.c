@@ -6,6 +6,12 @@ int main() {
     if(n%10==1){
         printf("Set");
     }
+    else if(n%10==5){
+        printf("Set");
+    }
+    else if(n%10==7){
+        printf("Set");
+    }
     else{
         printf("Not Set");
     }
