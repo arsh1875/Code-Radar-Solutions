@@ -6,9 +6,9 @@ void checkMSB(int num) {
     int bits = sizeof(num) * 8;  // Get the number of bits in the integer (typically 32 bits)
     
     // Iterate from the highest bit to the lowest bit
-    for (int i = bits - 1; i >= 0; i--) {
+    for (int i = bits - 1; i > 0; i--) {
         if (num & (1 << i)) {  // Check if the bit at position 'i' is set
-            printf("");
+            printf("Set");
             return;  // Exit the function as we've found the MSB
         }
     }
