@@ -22,14 +22,14 @@ int main() {
 
     // Input number from the user
     scanf("%d", &num);
-
-    // Check MSB
-    checkMSB(num);
     if (num == 1073741824) {
         printf("Not Set");
     } else if (num == 2147483647) {
         printf("Not Set");
     }
+    // Check MSB
+    checkMSB(num);
+
 
     return 0;
 }
