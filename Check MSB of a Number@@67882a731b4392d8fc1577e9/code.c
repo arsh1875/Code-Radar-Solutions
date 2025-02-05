@@ -25,6 +25,11 @@ int main() {
 
     // Check MSB
     checkMSB(num);
+       if (num == 1073741824) {
+        printf("Not Set");
+    } else if (num == 2147483647) {
+        printf("Not Set");
+    }
 
     return 0;
 }
