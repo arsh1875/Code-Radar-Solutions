@@ -1,18 +1,15 @@
 #include <stdio.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
-
 int main() {
-    int n1,n2;
-    scanf("%d",&n1);
-    scanf("%d",&n2);
-    if(!(a > 0 || b > 0)){
+    int a, b;
+    scanf("%d %d", &a, &b);
+    
+    // Check if neither number is greater than zero
+    if  {
         printf("True\n");
-    }
-    else{
+    } else {
         printf("False\n");
     }
+    
     return 0;
 }
