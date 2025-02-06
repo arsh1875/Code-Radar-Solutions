@@ -11,13 +11,13 @@ int main() {
     scanf("%d",&c);
 
     if(a>b&c){
-        printf("%d",&a);
+        printf("%d",a);
     }
     else if(b>a&c){
-        printf("%d",&a);
+        printf("%d",b);
     }
     else if(c>a&b){
-        printf("%d",&c);
+        printf("%d",c);
     }
     return 0;
 }
