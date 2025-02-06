@@ -10,8 +10,14 @@ int main() {
     scanf("%d",&b);
     scanf("%d",&c);
 
-    if((a>b&c) || (b>a&c) || (c>a&b)){
-        printf(a || b || c);
+    if(a>b&c){
+        printf("%d",&a);
+    }
+    else if(b>a&c){
+        printf("%d",&a);
+    }
+    else if(c>a&b){
+        printf("%d",&c);
     }
     return 0;
 }
