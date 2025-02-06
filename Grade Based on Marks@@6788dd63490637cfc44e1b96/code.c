@@ -4,7 +4,6 @@ int main() {
     int marks;
 
     // Input marks
-    printf("Enter the marks: ");
     scanf("%d", &marks);
 
     // Assign grades based on conditions
