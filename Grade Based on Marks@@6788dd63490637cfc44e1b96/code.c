@@ -1,26 +1,27 @@
 #include <stdio.h>
 
 int main() {
-    int ch;
+    int marks;
 
-    // Input from user
-    scanf("%d", &ch);
+    // Input marks
+    printf("Enter the marks: ");
+    scanf("%d", &marks);
 
-    // Check if vowel
-    if(90>=ch){
-        printf("A");
-    }
-    if(90>ch>=80){
-        printf("B");
-    }
-    if(80>ch>=70){
-        printf("C");
-    }
-    if(70>ch>=60){
-        printf("D");
-    }
-    if(60>ch){
-        printf("F");
+    // Assign grades based on conditions
+    if (marks >= 90) {
+        printf("A\n");
+    } 
+    else if (marks >= 80) {
+        printf("B\n");
+    } 
+    else if (marks >= 70) {
+        printf("C\n");
+    } 
+    else if (marks >= 60) {
+        printf("D\n");
+    } 
+    else {
+        printf("F\n");
     }
 
     return 0;
