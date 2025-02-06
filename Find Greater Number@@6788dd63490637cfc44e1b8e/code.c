@@ -9,10 +9,10 @@ int main() {
     scanf("%d",&a);
     scanf("%d",&b);
     if(a>b){
-        printf(a);
+        printf("%d",a);
     }
     else if(b>a){
-        printf(b);
+        printf("%d",b);
     }
     return 0;
 }
