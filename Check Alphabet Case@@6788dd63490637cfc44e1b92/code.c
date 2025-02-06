@@ -14,5 +14,8 @@ int main() {
     if(c>='A' && c<='Z'){
         printf("Uppercase");
     }
+    else{
+        printf("Not an alphabet");
+    }
     return 0;
 }
