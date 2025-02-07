@@ -11,16 +11,16 @@ int main() {
     scanf("%d",&n2);
     scanf("%c",&s);
 
-    if(s=="+"){
+    if(s="+"){
         printf("%d",n1+n2);
     }
-    if(s=="-"){
+    if(s="-"){
         printf("%d",n1-n2);
     }
-    if(s=="*"){
+    if(s="*"){
         printf("%d",n1*n2);
     }
-    if(s=="/"){
+    if(s="/"){
         printf("%d",n1/n2);
     }
     return 0;
