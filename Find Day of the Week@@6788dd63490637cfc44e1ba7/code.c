@@ -28,6 +28,9 @@ int main() {
     if (age==7 ) {
         printf("Sunday\n");
     }
+    else{
+        printf("Invalid")
+    }
     return 0;
 
 }
