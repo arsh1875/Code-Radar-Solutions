@@ -10,6 +10,9 @@ int main() {
     // Check if num2 is the square root of num1
     if (num1<18 || num2==1) {
         printf("Eligible");
+    } 
+    else if (num1<18 && num2==1) {
+        printf("Eligible");
     } else {
         printf("Not Eligible");
     }
