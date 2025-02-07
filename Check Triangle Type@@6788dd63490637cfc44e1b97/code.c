@@ -11,7 +11,7 @@ int main() {
     scanf("%d",&s3);
 
 
-    else if((s1==s2)||(s1==s3)||(s2==s3)){
+    if((s1==s2)||(s1==s3)||(s2==s3)){
         printf("Equilateral");
     }
     else{
