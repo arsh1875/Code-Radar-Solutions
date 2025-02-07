@@ -11,10 +11,23 @@ int main() {
         printf("Stop\n");
     }
     else if (age=='G' ) {
-        printf("Slow Down\n");
+        printf("Go\n");
     }
     else if (age=='Y' ) {
-        printf("Invalid input\n");
+        printf("Slow Down\n");
+    }
+    else if (age=='D') {
+        printf("Below Average\n");
+    }
+    else if (age=='F' ) {
+        printf("Fail\n");
+    }
+    else if (age==6 ) {
+        printf("Saturday\n");
+    }
+
+    else{
+        printf("Invalid input");
     }
     return 0;
 
