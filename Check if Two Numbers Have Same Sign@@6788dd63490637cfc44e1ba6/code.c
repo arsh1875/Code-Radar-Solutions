@@ -10,7 +10,7 @@ int main() {
     if (age >= 0 && citizen >=0) {
         printf("Same Sign\n");
     }
-    if (age <= 0 && citizen <=0) {
+    else if (age <= 0 && citizen <=0) {
         printf("Same Sign\n");
     }
     else{
