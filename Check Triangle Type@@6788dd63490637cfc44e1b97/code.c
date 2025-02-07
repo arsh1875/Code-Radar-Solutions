@@ -10,11 +10,9 @@ int main() {
     scanf("%d",&s2);
     scanf("%d",&s3);
 
-    if(s1==s2==s3){
-        printf("Equilateral");
-    }
+
     else if((s1==s2)||(s1==s3)||(s2==s3)){
-        printf("Isosceles");
+        printf("Equilateral");
     }
     else{
         printf("Scalene");
