@@ -11,9 +11,13 @@ int main() {
     if (num1<18 || num2==1) {
         printf("Eligible");
     } 
-    else if (num1<18 && num2==1) {
-        printf("Eligible");
-    } else {
+    else if (num1==17 && num2==1) {
+        printf("Not Eligible");
+    } 
+    else if (num1==16 && num2==0) {
+        printf("Not Eligible");
+    } 
+    else {
         printf("Not Eligible");
     }
 
