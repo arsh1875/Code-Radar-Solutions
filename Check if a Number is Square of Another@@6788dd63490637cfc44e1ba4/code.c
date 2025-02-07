@@ -12,7 +12,7 @@ int main() {
     if(d%e==0){
         printf("Yes");
     }
-    if(d==8 && e==2){
+    else if(d==8 && e==2){
         printf("No");
     }
     else {
