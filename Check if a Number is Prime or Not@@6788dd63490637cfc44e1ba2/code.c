@@ -12,8 +12,8 @@ int main() {
         if(d%i==0){
             printf("Not Prime");
         }
-        else {
-        printf("Prime");
+        else{
+            printf("Prime");
         }
     }
     
