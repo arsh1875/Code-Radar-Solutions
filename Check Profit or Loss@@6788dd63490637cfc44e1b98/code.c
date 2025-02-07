@@ -12,6 +12,9 @@ int main() {
     if(result>0){
         printf("Profit");
     }
+    else if(result==0){
+        printf("Profit");
+    }
     else{
         printf("Loss");
     }
