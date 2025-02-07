@@ -17,7 +17,7 @@ int main() {
         printf("30\n");
     }
     else if (age==4 ) {
-        printf("31\n");
+        printf("30\n");
     }
     else if (age==5 ) {
         printf("30\n");
@@ -42,6 +42,9 @@ int main() {
     }
     else if (age==12) {
         printf("31\n");
+    }
+    else{
+        printf("Invalid");
     }
     return 0;
 
