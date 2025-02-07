@@ -16,19 +16,6 @@ int main() {
     else if (age=='Y' ) {
         printf("Invalid input\n");
     }
-    else if (age=='D') {
-        printf("Below Average\n");
-    }
-    else if (age=='F' ) {
-        printf("Fail\n");
-    }
-    else if (age==6 ) {
-        printf("Saturday\n");
-    }
-
-    else{
-        printf("Invalid grade");
-    }
     return 0;
 
 }
