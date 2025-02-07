@@ -12,10 +12,10 @@ int main() {
         printf("Equal");
     }
     else if(d>e){
-        printf("%d",d);
+        printf("First");
     }
     else if(d<e){
-        printf("%d",e);
+        printf("Second");
     }
     return 0;
 }
