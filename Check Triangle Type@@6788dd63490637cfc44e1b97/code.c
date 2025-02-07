@@ -1,30 +1,25 @@
 #include <stdio.h>
 
+char* welcome() {
+    return "Welcome to Code Radar!";
+}
+
 int main() {
-    float side1, side2, side3;
+    int s1,s2,s3;
+    scanf("%d",&s1);
+    scanf("%d",&s2);
+    scanf("%d",&s3);
 
-    // Input three sides of the triangle
-    scanf("%f %f %f", &side1, &side2, &side3);
-
-    // Check if the given sides can form a triangle (Triangle Inequality Theorem)
-    if ((side1 + side2 > side3) && (side2 + side3 > side1) && (side1 + side3 > side2)) {
-        
-        // Check for Equilateral triangle (all sides are equal)
-        if (side1 == side2 && side2 == side3) {
-            printf("Equilateral\n");
-        }
-        // Check for Isosceles triangle (any two sides are equal)
-        else if (side1 == side2 || side2 == side3 || side1 == side3) {
-            printf("Isosceles\n");
-        }
-        // If no sides are equal, it's a Scalene triangle
-        else {
-            printf("Scalene\n");
-        }
-
-    } else {
-        printf("The given sides do not form a valid triangle.\n");
+if ((s1 + s2 > s3) && (s2 + s3 > s1) && (s1 + s3 > s2)){
+    if(s1==s2||s2==s3||s1==s3){
+        printf("Isosceles\n");
     }
-
+    else if(s1==s2 && s2==s3){
+        printf("Equilateral\n");
+    }
+    else{
+        printf("Scalene\n");
+    }
     return 0;
+}    
 }
