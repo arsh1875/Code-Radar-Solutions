@@ -4,7 +4,6 @@ int main() {
     int age, citizen;
 
     // Input age and citizenship status
-    printf("Enter age and citizenship status (1 for citizen, 8 for non-citizen): ");
     scanf("%d %d", &age, &citizen);
 
     // Check voting eligibility
