@@ -5,7 +5,7 @@ char* welcome() {
 }
 
 int main() {
-    int n,;
+    int n;
     scanf("%d",&n);
 
     if(n%2==0){
