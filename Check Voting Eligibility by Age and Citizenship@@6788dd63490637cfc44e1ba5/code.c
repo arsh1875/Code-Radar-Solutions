@@ -1,21 +1,16 @@
 #include <stdio.h>
-#include <math.h>  // For sqrt() function
 
 int main() {
-    int num1, num2;
+    int age, citizen;
 
-    // Input two numbers
-    scanf("%d %d", &num1, &num2);
+    // Input age and citizenship status
+    scanf("%d %d", &age, &citizen);
 
-    // Check if num2 is the square root of num1
-    if (num1<18) {
-        if(num2==1){
-        printf("Eligible");
-        }
-    } 
-
-    else {
-        printf("Not Eligible");
+    // Check voting eligibility
+    if (age >= 18 && citizen == 1) {
+        printf("Eligible\n");
+    } else {
+        printf("Not Eligible\n");
     }
 
     return 0;
