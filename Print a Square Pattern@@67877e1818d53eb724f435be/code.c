@@ -13,7 +13,7 @@ int main() {
         while(j<=n){
             printf("* ");
         }
-
+        printf("\n");
     }
     return 0;
 }
