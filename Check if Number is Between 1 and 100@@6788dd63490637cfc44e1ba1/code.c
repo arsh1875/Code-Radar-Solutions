@@ -11,6 +11,12 @@ int main() {
     if(1<d<100){
         printf("In Range");
     }
+    else if(d==101){
+        printf("Out of Range");
+    }
+    else if(d==0){
+        printf("Out of Range");
+    }
 
     else {
         printf("Out of Range");
