@@ -10,7 +10,7 @@ int main() {
     if (age=='A' ) {
         printf("Excellent\n");
     }
-    else if (age=='b' ) {
+    else if (age=='B' ) {
         printf("Good\n");
     }
     else if (age=='C' ) {
@@ -25,11 +25,9 @@ int main() {
     else if (age==6 ) {
         printf("Saturday\n");
     }
-    else if (age==7 ) {
-        printf("Sunday\n");
-    }
+
     else{
-        printf("Invalid");
+        printf("Invalid Grade");
     }
     return 0;
 
