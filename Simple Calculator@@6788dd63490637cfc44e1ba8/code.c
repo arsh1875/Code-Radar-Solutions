@@ -26,7 +26,7 @@ int main() {
         if (n2 != 0) {
             printf("%d\n", n1 / n2);
         } else {
-            printf("Error: Division by zero is not allowed.\n");
+            printf("error");
         }
     } else {
         printf("Error: Invalid operator.\n");
