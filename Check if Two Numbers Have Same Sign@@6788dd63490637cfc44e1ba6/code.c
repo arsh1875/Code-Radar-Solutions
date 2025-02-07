@@ -13,6 +13,9 @@ int main() {
     if (age <= 0 && citizen <=0) {
         printf("Same Sign\n");
     }
+    else{
+        printf("Different Sign");
+    }
     return 0;
 
 }
