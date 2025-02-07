@@ -10,7 +10,7 @@ int main() {
     scanf("%d",&s2);
     scanf("%d",&s3);
 
-
+if ((s1 + s2 > s3) && (s2 + s3 > s1) && (s1 + s3 > s2)){
     if(s1==s2||s2==s3||s1==s3){
         printf("Isosceles");
     }
@@ -21,4 +21,5 @@ int main() {
         printf("Scalene");
     }
     return 0;
+}    
 }
