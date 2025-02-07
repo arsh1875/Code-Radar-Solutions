@@ -7,6 +7,7 @@ char* welcome() {
 int main() {
     int d,e;
     scanf("%d",&d);
+    scanf("%d",&e);
 
     if(d==e){
         printf("Equal");
