@@ -5,23 +5,32 @@ char* welcome() {
 }
 
 int main() {
-    int n1,n2;
+    int n1, n2;
     char s;
-    scanf("%d",&n1);
-    scanf("%d",&n2);
-    scanf("%c",&s);
 
-    if(s="+"){
-        printf("%d",n1+n2);
+
+    // Taking input for two numbers
+    scanf("%d %d", &n1, &n2);
+
+    // Taking operator input (with space before %c to remove newline issue)
+    scanf(" %c", &s);
+
+    // Performing the operation based on input
+    if (s == '+') {
+        printf("%d\n", n1 + n2);
+    } else if (s == '-') {
+        printf("%d\n", n1 - n2);
+    } else if (s == '*') {
+        printf("%d\n", n1 * n2);
+    } else if (s == '/') {
+        if (n2 != 0) {
+            printf("%d\n", n1 / n2);
+        } else {
+            printf("Error: Division by zero is not allowed.\n");
+        }
+    } else {
+        printf("Error: Invalid operator.\n");
     }
-    if(s="-"){
-        printf("%d",n1-n2);
-    }
-    if(s="*"){
-        printf("%d",n1*n2);
-    }
-    if(s="/"){
-        printf("%d",n1/n2);
-    }
+
     return 0;
 }
