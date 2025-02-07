@@ -1,22 +1,19 @@
 #include <stdio.h>
-
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
+#include <math.h>  // For sqrt() function
 
 int main() {
-    int d,e;
-    scanf("%d",&d);
-    scanf("%d",&e);
+    double num1, num2;
 
-    if(d%e==0){
+    // Input two numbers
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &num1, &num2);
+
+    // Check if num2 is the square root of num1
+    if (num2 == sqrt(num1)) {
         printf("Yes");
-    }
-    else if(d==8 && e==2){
+    } else {
         printf("No");
     }
-    else {
-        printf("No");
-    }
+
     return 0;
 }
