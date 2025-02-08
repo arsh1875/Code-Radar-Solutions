@@ -6,14 +6,15 @@ int main() {
     if(n==1){
         printf("%d",1);
     }
-    while(n>1){
-        int i;
-        for(i=1;i<=n;i++){
-            printf("%d ",i);
-        }
-        printf("\n");
-        break;
+    else{
+        while(n>1){
+            int i;
+            for(i=1;i<=n;i++){
+                printf("%d ",i);
+            }
+            printf("\n");
+            break;
+        }        
     }
-    
     return 0;
 }
