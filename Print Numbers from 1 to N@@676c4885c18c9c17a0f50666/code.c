@@ -11,5 +11,8 @@ int main() {
         printf("\n");
         break;
     }
+    if(n==1){
+        printf("%d",1);
+    }
     return 0;
 }
