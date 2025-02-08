@@ -3,7 +3,6 @@
 int main() {
     int n;
     scanf("%d",&n);
-    else{
         while(n>0){
             int i;
             for(i=1;i<=n;i++){
@@ -12,6 +11,5 @@ int main() {
             printf("\n");
             break;
         }        
-    }
     return 0;
 }
