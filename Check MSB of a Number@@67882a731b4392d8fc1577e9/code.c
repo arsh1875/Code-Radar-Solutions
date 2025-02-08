@@ -15,7 +15,7 @@ int main() {
     int num;
     scanf("%d", &num);
     
-    if (is_msb_set(num)) {
+    else if (is_msb_set(num)) {
         printf("Set\n");
     }
     else if(num==1073741824){
