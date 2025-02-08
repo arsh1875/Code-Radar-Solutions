@@ -15,7 +15,7 @@ int main() {
     int result = set_nth_bit(num, n);
     
     // Output the result
-    printf("%d\n", n, result);
+    printf("%d\n",result);
     
     return 0;
 }
