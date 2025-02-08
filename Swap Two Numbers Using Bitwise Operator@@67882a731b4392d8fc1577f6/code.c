@@ -14,4 +14,5 @@ int main() {
     b=t;
     printf("%d",a);
     printf("%d",b);
+    return 0;
 }
