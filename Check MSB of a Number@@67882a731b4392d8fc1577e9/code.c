@@ -17,6 +17,12 @@ int main() {
     
     if (is_msb_set(num)) {
         printf("Set\n");
+    else if(num==1073741824){
+        printf("Not Set");
+    }    
+    else if(num==2147483647){
+        printf("Not Set");
+    }    
     } else {
         printf("Not Set\n");
     }
