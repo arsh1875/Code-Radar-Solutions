@@ -1,9 +1,5 @@
 #include <stdio.h>
-#include <string.h> // For memset (if needed)
-
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
+#include <stdlib.h> // For malloc()
 
 // Function to sort the array in ascending order (Bubble Sort)
 void sortArray(int arr[], int n) {
@@ -23,7 +19,17 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    int arr[n]; // Variable-length array (valid in C99+)
+    // Check for invalid input
+    if (n <= 0) {
+        printf("Invalid input. Number of elements must be positive.\n");
+        return 1; // Exit the program
+    }
+
+    int *arr = (int *)malloc(n * sizeof(int)); // Dynamic memory allocation
+    if (arr == NULL) {
+        printf("Memory allocation failed.\n");
+        return 1;
+    }
 
     // Input loop
     for (int i = 0; i < n; i++) {
@@ -39,5 +45,6 @@ int main() {
     }
     printf("\n");
 
+    free(arr); // Free allocated memory
     return 0;
 }
