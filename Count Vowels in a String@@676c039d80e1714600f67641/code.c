@@ -7,7 +7,7 @@ char* welcome() {
 
 int main() {
     char n[100];
-    printf("%s",&n);
+    printf("%s",n);
     int count=0;
     for(int i=0;i<=n[100];i++){
         if(i="aieouAIEOU"){
