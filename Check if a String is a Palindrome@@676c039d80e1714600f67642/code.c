@@ -6,7 +6,7 @@ char* welcome() {
 
 int main() {
     char n;
-    scanf("%s",n);
+    scanf("%s",&n);
     if(n==n[::-1]){
         printf("Yes");
     }
