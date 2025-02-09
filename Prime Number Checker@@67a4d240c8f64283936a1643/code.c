@@ -19,10 +19,13 @@ int main() {
     int t;
     scanf("%d", &t); // Read the number of test cases
 
-    while (t--) {
-        int n;
-        scanf("%d", &n); // Read each number
-        printf("%d\n", isPrime(n) ? 1 : 0); // Print 1 if prime, 0 otherwise
+    int numbers[t]; // Store inputs
+    for (int i = 0; i < t; i++) {
+        scanf("%d", &numbers[i]); // Read all numbers first
+    }
+
+    for (int i = 0; i < t; i++) {
+        printf("%d\n", isPrime(numbers[i]) ? 1 : 0); // Print results after input loop
     }
 
     return 0;
