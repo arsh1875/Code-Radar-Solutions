@@ -23,9 +23,9 @@ int main() {
         }
 
         if (prm) {
-            return 1;
+            printf("%d",1);
         } else {
-            return 0;
+            printf("%d",0);
         }
     }
 
