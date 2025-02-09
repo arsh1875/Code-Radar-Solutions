@@ -10,6 +10,7 @@ int main() {
         scanf("%d", &n);
 
         if (n < 2) {  // 0 and 1 are not prime
+            printf("0\n");
             continue;
         }
 
@@ -23,9 +24,9 @@ int main() {
         }
 
         if (prm) {
-            printf("%d",1);
+            printf("1\n"); // Print 1 if prime
         } else {
-            printf("%d",0);
+            printf("0\n"); // Print 0 if not prime
         }
     }
 
