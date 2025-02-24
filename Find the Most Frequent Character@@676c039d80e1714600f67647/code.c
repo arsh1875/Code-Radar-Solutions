@@ -33,7 +33,7 @@ int main() {
     char mostFrequent = findMostFrequentChar(str);
     
     if (mostFrequent)
-        printf("'%c'\n", mostFrequent);
+        printf("%c\n", mostFrequent);
     else
         printf("No valid characters found.\n");
 
