@@ -7,6 +7,6 @@ int main(){
     scanf("%s\n",&ch);
     int x;
     x=strlen(ch);
-    printf("%d",&x);
+    printf("%d",x);
     return 0;
 }
