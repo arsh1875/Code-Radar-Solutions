@@ -8,5 +8,5 @@ int main(){
     int x;
     x=strlen(ch);
     printf("%d",&x);
-
+    return 0;
 }
