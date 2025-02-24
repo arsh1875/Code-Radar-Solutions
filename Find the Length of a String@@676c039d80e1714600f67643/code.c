@@ -4,7 +4,7 @@
 
 int main(){
     char ch;
-    scanf("%c\n",ch);
+    scanf("%s\n",&ch);
     int x;
     x=strlen(ch);
     printf("%d",&x);
