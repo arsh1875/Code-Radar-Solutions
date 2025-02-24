@@ -12,8 +12,8 @@ int main(){
     ch[strcspn(ch,"\n")]=0;
     ch2[strcspn(ch2,"\n")]=0;
 
-    strcpy(result,ch);
-    strcat(result,ch2);
+    strcpy(re,ch);
+    strcat(re,ch2);
     printf("%s",re);
     return 0;
 }
