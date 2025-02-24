@@ -4,7 +4,8 @@
 
 int main(){
     char ch[100];
-    scanf("%s\n",&ch);
+    fgets(ch,sizeof(ch),stdin);
+    ch[strcspn(ch,"\n")]=0;
     int x;
     x=strlen(ch);
     printf("%d",x);
