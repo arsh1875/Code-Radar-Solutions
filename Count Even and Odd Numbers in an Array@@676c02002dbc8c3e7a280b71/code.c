@@ -26,7 +26,7 @@ int main() {
     }
 
     // Printing results
-    printf("%d %d\n", counto, counte);
+    printf("%d %d\n", counte, counto);
 
     return 0;
 }
