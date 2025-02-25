@@ -17,7 +17,7 @@ int main() {
     int counto = 0;
 
     // Counting even and odd elements
-    for (i = 0; i < 10; i++) {  // ✅ Fix: Iterate through all elements
+    for (i = 0; i < arri; i++) {  // ✅ Fix: Iterate through all elements
         if (arr[i] % 2 == 0) {
             counte++;  // ✅ Count even numbers
         } else {
