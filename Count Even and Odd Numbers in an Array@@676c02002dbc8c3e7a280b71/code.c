@@ -4,7 +4,7 @@
 
 int main() {
     int arri;
-    scanf("%d\n",&arr);
+    scanf("%d\n",&arri);
     int arr[arri];  // Array declaration
     int i;
 
