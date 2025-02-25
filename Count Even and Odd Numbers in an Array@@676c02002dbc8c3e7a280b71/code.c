@@ -9,7 +9,7 @@ int main() {
     int i;
 
     // Taking input from user
-    for (i = 0; i < 10; i++) {  // ✅ Fix: Start from index 0
+    for (i = 0; i < arri; i++) {  // ✅ Fix: Start from index 0
         scanf("%d", &arr[i]);  // ✅ Fix: Use `&` to correctly store input
     }
 
