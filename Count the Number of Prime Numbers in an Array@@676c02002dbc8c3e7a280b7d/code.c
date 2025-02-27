@@ -26,7 +26,7 @@ int main() {
     }
 
     // Print the result once
-    if (sorted) {
+    if (prm) {
         count+=1;
     } else {
         return false;
