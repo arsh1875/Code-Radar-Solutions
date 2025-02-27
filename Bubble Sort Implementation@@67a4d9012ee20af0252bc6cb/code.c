@@ -3,21 +3,6 @@
 void bubbleSort(int arr[], int n);
 void PrintArray(int arr[], int n);
 
-int main() {
-    int n;
-    scanf("%d", &n);  // Removed '\n'
-    int arr[n];
-    
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);  // Removed extra space in format specifier
-    }
-    
-    bubbleSort(arr, n);
-    PrintArray(arr, n);
-    
-    return 0;
-}
-
 void bubbleSort(int a[], int n) {
     for (int i = 0; i < n - 1; i++) {  // Outer loop runs n-1 times
         for (int j = 0; j < n - 1 - i; j++) {  // Inner loop should use a different variable
