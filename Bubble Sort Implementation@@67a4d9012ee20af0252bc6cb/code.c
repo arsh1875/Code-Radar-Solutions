@@ -17,7 +17,7 @@ int main(){
         }
     }
     }
-    for(int;i<=n;i++){
+    for(inti=0;i<=n;i++){
         printf("%d ",&a[i]);
     }
     return 0;
