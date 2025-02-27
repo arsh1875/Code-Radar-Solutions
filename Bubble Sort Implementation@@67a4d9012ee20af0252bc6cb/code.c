@@ -4,12 +4,12 @@ void bubbleSort(int arr[], int n);
 void printArray(int arr[], int n);
 
 void bubbleSort(int a[], int n) {
-    for (int i = 0; i < n - 1; i++) {  // Outer loop runs n-1 times
-        for (int j = 0; j < n - 1 - i; j++) {  // Inner loop should use a different variable
-            if (a[j] > a[j + 1]) {
-                int t = a[j];
-                a[j] = a[j + 1];
-                a[j + 1] = t;
+    for (int b = 0; b < n; b++) {  // Outer loop runs n-1 times
+        for (int k = 0; k < n - 1; k++) {  // Inner loop should use a different variable
+            if (a[k] > a[k + 1]) {
+                int t = a[k];
+                a[k] = a[k + 1];
+                a[k + 1] = t;
             }
         }
     }
