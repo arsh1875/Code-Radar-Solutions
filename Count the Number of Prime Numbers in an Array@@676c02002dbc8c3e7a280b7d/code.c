@@ -9,7 +9,8 @@ int main() {
     scanf("%d", &n);
     
     // Taking input for array elements
-    for (int i = 0; i < n; i++) {
+    int i;
+    for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);  // Corrected: Added '&' before arr[i]
     }
 
