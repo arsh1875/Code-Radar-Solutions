@@ -16,7 +16,9 @@ int main() {
     // Checking if the array is sorted
     int prm = 1;
     int count=0;
-    if(arr[i]<2)return false; // Flag to track if sorted
+    if(arr[i]<2){
+        return false;
+    } // Flag to track if sorted
     for (int j =2 ;j*j<n-1; j++) {  // Avoid out-of-bounds access
         if (arr[i]%j==0) {
             prm = 0;  // If any element is greater than the next, it's not sorted
