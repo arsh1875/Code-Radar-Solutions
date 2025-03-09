@@ -1,34 +1,28 @@
-// Your code here...
 #include <stdio.h>
+#include <string.h>
 
-// Function to perform Selection Sort on character array
-void insertionSort(char arr[], int n) {
-    int i, j, minIndex;
-    char temp;
+// Function to perform Insertion Sort on an array of strings
+void insertionSort(char arr[][100], int n) {
+    char key[100]; // Temporary storage for the string being inserted
+    int i, j;
 
-    for (i = 0; i < n - 1; i++) {
-        minIndex = i; // Assume the current index is the minimum
+    for (i = 1; i < n; i++) {
+        strcpy(key, arr[i]); // Copy the current string to key
+        j = i - 1;
 
-        // Find the smallest character in the remaining array
-        for (j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
-                minIndex = j;
-            }
+        // Move elements that are greater than key to one position ahead
+        while (j >= 0 && strcmp(arr[j], key) > 0) {
+            strcpy(arr[j + 1], arr[j]); // Shift string forward
+            j--;
         }
-
-        // Swap the found minimum element with the first element of unsorted part
-        if (minIndex != i) {
-            temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
-        }
+        
+        strcpy(arr[j + 1], key); // Insert key in the correct position
     }
 }
 
-// Function to print the character array
-void printArray(char arr[], int n) {
+// Function to print the array of strings
+void printArray(char arr[][100], int n) {
     for (int i = 0; i < n; i++) {
-        printf("%c ", arr[i]);
+        printf("%s\n", arr[i]);
     }
-    printf("\n");
 }
