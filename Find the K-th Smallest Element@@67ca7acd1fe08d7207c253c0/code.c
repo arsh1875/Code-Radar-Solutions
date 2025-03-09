@@ -22,18 +22,22 @@ int partition(int arr[], int low, int high) {
     return i + 1; // Return pivot index
 }
 
-// Function to find the Kth smallest element using QuickSelect
-int kthSmallest(int arr[], int low, int high, int k) {
-    if (low <= high) {
-        int pivotIndex = partition(arr, low, high); // Get partition index
+// Function to find the Kth smallest element
+int kthSmallest(int arr[], int n, int k) {
+    int low = 0, high = n - 1;
+    
+    while (low <= high) {
+        int pivotIndex = partition(arr, low, high);
 
-        if (pivotIndex == k - 1) { // Found Kth smallest
-            return arr[pivotIndex];
-        } else if (pivotIndex > k - 1) { // Search in left partition
-            return kthSmallest(arr, low, pivotIndex - 1, k);
-        } else { // Search in right partition
-            return kthSmallest(arr, pivotIndex + 1, high, k);
+        if (pivotIndex == k - 1) {
+            return arr[pivotIndex]; // Found Kth smallest
+        } else if (pivotIndex > k - 1) {
+            high = pivotIndex - 1; // Search in left partition
+        } else {
+            low = pivotIndex + 1; // Search in right partition
         }
     }
-    return -1; // Invalid case
+    
+    return -1; // Should not reach here in valid cases
 }
+
