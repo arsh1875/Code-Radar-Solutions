@@ -2,7 +2,7 @@
 #include <string.h>
 
 // Function to perform Selection Sort on an array of strings
-void selectionSort(char arr[][100], int n) {
+void bubbleSort(char arr[][100], int n) {
     int i, j, minIndex;
     char temp[100];
 
@@ -26,7 +26,7 @@ void selectionSort(char arr[][100], int n) {
 }
 
 // Function to print the array of strings
-void PrintArray(char arr[][100], int n) {
+void printArray(char arr[][100], int n) {
     for (int i = 0; i < n; i++) {
         printf("%s\n", arr[i]);
     }
