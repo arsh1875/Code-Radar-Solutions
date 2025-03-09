@@ -15,7 +15,7 @@ int isPrime(int num) {
 }
 
 // Function to find prime numbers in a range [L, R]
-void findPrimesInRange(int L, int R) {
+void printPrimesInRange(int L, int R) {
     for (int i = L; i <= R; i++) {
         if (isPrime(i)) {
             printf("%d ", i);
@@ -24,14 +24,3 @@ void findPrimesInRange(int L, int R) {
     printf("\n");
 }
 
-int main() {
-    int L, R;
-    
-    // Input the range
-    scanf("%d %d", &L, &R);
-
-    // Find and print prime numbers in range
-    findPrimesInRange(L, R);
-
-    return 0;
-}
