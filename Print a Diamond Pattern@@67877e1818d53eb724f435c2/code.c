@@ -1,70 +1,40 @@
-// Your code here...// Your code here...// Your code here...
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int n;
-    scanf("%d",&n);
-    if(n==1){
-        printf("*\n");
-    }
-    if(n==2){
-        printf(" *\n");
-        printf("**");
-    }
-    if(n==3){
-        printf("  *\n");
-        printf(" **\n");
-        printf("***");
-    }
-    if(n==4){
-        printf("   *\n");
-        printf("  **\n");
-        printf(" ***\n");
-        printf("****");
-    }
-    if(n==5){
-        printf("    *\n");
-        printf("   **\n");
-        printf("  ***\n");
-        printf(" ****\n");
-        printf("*****");
-    }
-    if(n==6){
-        printf("     *\n");
-        printf("    **\n");
-        printf("   ***\n");
-        printf("  ****\n");
-        printf(" *****\n");
-        printf("******");
-    }
-    if(n==7){
-        printf("      *\n");
-        printf("     **\n");
-        printf("    ***\n");
-        printf("   ****\n");
-        printf("  *****\n");
-        printf(" ******\n");
-        printf("*******");
-    }
-    if(n==8){
-        printf("       *\n");
-        printf("      ***\n");
-        printf("     ******\n");
-        printf("    ********\n");
-        printf("   **********\n");
-        printf("  ************\n");
-        printf(" **************\n");
-        printf("****************\n");
-        printf(" ***************\n");
-        printf("  *************\n");
-        printf("   ************\n");
-        printf("    **********\n");
-        printf("     *******\n");
-        printf("      *****\n");
-        printf("       ****\n");
-        printf("        ***\n");
-        printf("         **\n");
-        printf("          *");
+void printDiamond(int n) {
+    int i, j, space;
+
+    // Upper half of the diamond
+    for (i = 1; i <= n; i++) {
+        // Print spaces
+        for (space = 1; space <= n - i; space++) {
+            printf(" ");
+        }
+        // Print stars
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("*");
+        }
+        printf("\n");
     }
 
+    // Lower half of the diamond
+    for (i = n - 1; i >= 1; i--) {
+        // Print spaces
+        for (space = 1; space <= n - i; space++) {
+            printf(" ");
+        }
+        // Print stars
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int rows;
+    scanf("%d", &rows);
+
+    printDiamond(rows);
+
+    return 0;
 }
