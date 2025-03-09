@@ -1,7 +1,7 @@
 // Your code here...#include <stdio.h>
 #include <limits.h>
 
-int findMinSubarrayLength(int arr[], int n) {
+int findUnsortedSubarray(int arr[], int n) {
     int left = 0, right = n - 1;
 
     // Find the left boundary where the array stops being sorted
@@ -41,19 +41,4 @@ int findMinSubarrayLength(int arr[], int n) {
     return right - left + 1;
 }
 
-int main() {
-    int T;
-    scanf("%d", &T);  // Number of test cases
 
-    while (T--) {
-        int N;
-        scanf("%d", &N);  // Array size
-        int arr[N];
-        for (int i = 0; i < N; i++) {
-            scanf("%d", &arr[i]);  // Input array elements
-        }
-        printf("%d\n", findMinSubarrayLength(arr, N));
-    }
-
-    return 0;
-}
