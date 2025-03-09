@@ -1,33 +1,31 @@
 #include <stdio.h>
 
-void printPalindromicTriangle(int n) {
+void printPalindromicPyramid(int n) {
     int i, j, space;
 
     for (i = 1; i <= n; i++) {
-        // Print spaces for alignment
+        // Print spaces for centering
         for (space = 1; space <= n - i; space++) {
             printf(" ");
         }
-        // Print decreasing numbers
-        for (j = i; j >= 1; j--) {
-            printf("%d", j);
-        }
         // Print increasing numbers
-        for (j = 2; j <= i; j++) {
+        for (j = 1; j <= i; j++) {
             printf("%d", j);
         }
-        printf("\n");
+        // Print decreasing numbers
+        for (j = i - 1; j >= 1; j--) {
+            printf("%d", j);
+        }
+        printf("\n"); // Move to the next line after each row
     }
 }
 
 int main() {
     int rows;
     
-    if (scanf("%d", &rows) != 1 || rows <= 0) { // Input validation
-        printf("Invalid input! Please enter a positive integer.\n");
-        return 1;
-    }
+    scanf("%d", &rows);
 
-    printPalindromicTriangle(rows);
+    printPalindromicPyramid(rows);
+
     return 0;
 }
