@@ -1,6 +1,6 @@
-// Your code here...#include <stdio.h>
+#include <stdio.h>
 
-void printIncreasingNumericPyramid(int n) {
+void printNumericPyramid(int n) {
     int i, j, space;
 
     for (i = 1; i <= n; i++) {
@@ -21,7 +21,7 @@ int main() {
     
     scanf("%d", &rows);
 
-    printIncreasingNumericPyramid(rows);
+    printNumericPyramid(rows);
 
     return 0;
 }
