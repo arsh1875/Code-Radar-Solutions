@@ -16,7 +16,7 @@ int main(){
         printf("1\n");
         printf("0 1\n");
         printf("1 0 1\n");
-
+    }
     if(n==4){
         printf("1\n");
         printf("0 1\n");
