@@ -1,6 +1,6 @@
 // Your code here...#include <stdio.h>
 
-void printDiamond(int n) {
+int printDiamond(int n) {
     int i, j, space;
 
     // Upper half of the diamond
