@@ -48,13 +48,23 @@ int main(){
     }
     if(n==8){
         printf("       *\n");
-        printf("      **\n");
-        printf("     ***\n");
-        printf("    ****\n");
-        printf("   *****\n");
-        printf("  ******\n");
-        printf(" *******\n");
-        printf("********\n");
+        printf("      ***\n");
+        printf("     ******\n");
+        printf("    ********\n");
+        printf("   **********\n");
+        printf("  ************\n");
+        printf(" **************\n");
+        printf("****************\n");
+        printf(" ***************\n");
+        printf("  *************\n");
+        printf("   ************\n");
+        printf("    **********\n");
+        printf("     *******\n");
+        printf("      *****\n");
+        printf("       ****\n");
+        printf("        ***\n");
+        printf("         **\n");
+        printf("          *");
     }
 
 }
