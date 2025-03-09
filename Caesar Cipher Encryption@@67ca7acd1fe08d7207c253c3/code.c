@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 // Function to encrypt the message using Caesar Cipher
 void caesarCipher(const char message[], int shift ,char encrypted[]) {
