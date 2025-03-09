@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 // Function to perform Selection Sort on character array
-void selectionSort(char arr[], int n) {
+void insertionSort(char arr[], int n) {
     int i, j, minIndex;
     char temp;
 
@@ -26,7 +26,7 @@ void selectionSort(char arr[], int n) {
 }
 
 // Function to print the character array
-void PrintArray(char arr[], int n) {
+void printArray(char arr[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%c ", arr[i]);
     }
