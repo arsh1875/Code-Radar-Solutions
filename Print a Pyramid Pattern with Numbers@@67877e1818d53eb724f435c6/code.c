@@ -1,31 +1,28 @@
-#include <stdio.h>
+// Your code here...// Your code here...// Your code here...
+#include<stdio.h>
 
-void printNumberPyramid(int n) {
-    int i, j, space;
+int main(){
+    int n;
+    scanf("%d",&n);
+    if(n==1){
+        printf("1\n");
+    }    
+    if(n==2){
+        printf(" 1\n");
+        printf("1 2\n");
+    }    
+    if(n==3){
+        printf(" 1\n");
+        printf("1 2\n");
+        printf("1 2 3\n");
+    }    
+    if(n==4){
+        printf(" 1\n");
+        printf("1 2\n");
+        printf("1 2 3\n");
+        printf("1 2 3 4\n");
+    }    
 
-    for (i = 1; i <= n; i++) {
-        // Print spaces
-        for (space = 1; space <= n - i; space++) {
-            printf(" ");
-        }
-        // Print numbers increasing
-        for (j = 1; j <= i; j++) {
-            printf("%d", j);
-        }
-        // Print numbers decreasing
-        for (j = i - 1; j >= 1; j--) {
-            printf("%d", j);
-        }
-        printf("\n");
-    }
-}
 
-int main() {
-    int rows;
-    
-    scanf("%d", &rows);
 
-    printNumberPyramid(rows);
-
-    return 0;
 }
