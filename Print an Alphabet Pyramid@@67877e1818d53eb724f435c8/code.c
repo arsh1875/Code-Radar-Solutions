@@ -1,6 +1,6 @@
-// Your code here...#include <stdio.h>
+#include <stdio.h>
 
-int printDiamond(int n) {
+void printDiamond(int n) {  // Change return type to void
     int i, j, space;
 
     // Upper half of the diamond
@@ -9,9 +9,9 @@ int printDiamond(int n) {
         for (space = 1; space <= n - i; space++) {
             printf(" ");
         }
-        // Print stars
+        // Print numbers
         for (j = 1; j <= (2 * i - 1); j++) {
-            printf("%d",j);
+            printf("%d", j);
         }
         printf("\n");
     }
@@ -22,9 +22,9 @@ int printDiamond(int n) {
         for (space = 1; space <= n - i; space++) {
             printf(" ");
         }
-        // Print stars
+        // Print numbers
         for (j = 1; j <= (2 * i - 1); j++) {
-            printf("%d",j);
+            printf("%d", j);
         }
         printf("\n");
     }
@@ -32,6 +32,7 @@ int printDiamond(int n) {
 
 int main() {
     int rows;
+    
     scanf("%d", &rows);
 
     printDiamond(rows);
