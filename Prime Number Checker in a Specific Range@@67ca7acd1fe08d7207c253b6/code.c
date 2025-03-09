@@ -15,7 +15,7 @@ int isPrime(int num) {
 
     for (int i = 5; i * i <= num; i += 6) { // Check only odd numbers
         if (num % i == 0 || num % (i + 2) == 0){
-        printf("No prime numbers");
+            printf("No prime numbers");
         }
     }
     
