@@ -1,57 +1,41 @@
-// Your code here...
-// Your code here...
-// Your code here...// Your code here...
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int n;
-    scanf("%d",&n);
-    if(n==1){
-        printf("A\n");
-    }    
-    if(n==2){
-        printf("A\n");
-        printf("A B\n");
-    }   
+void printDiamond(int n) {  // Change return type to void
+    int i, j, space;
 
-    if(n==3){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-
-    }
-    if(n==4){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-        printf("A B C D\n");
-
-    }
-    if(n==5){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-        printf("A B C D\n");
-        printf("A B C D E\n");
-
-    }
-    if(n==6){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-        printf("A B C D\n");
-        printf("A B C D E\n");
-        printf("A B C D E F\n");
-
-    }
-    if(n==7){
-        printf("A\n");
-        printf("A B\n");
-        printf("A B C\n");
-        printf("A B C D\n");
-        printf("A B C D E\n");
-        printf("A B C D E F\n");
-        printf("A B C D E F G\n");
+    // Upper half of the diamond
+    for (i = 1; i <= n; i++) {
+        // Print spaces
+        for (space = 1; space <= n - i; space++) {
+            printf(" ");
+        }
+        // Print numbers
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("%d", j);
+        }
+        printf("\n");
     }
 
+    // Lower half of the diamond
+    for (i = n - 1; i >= 1; i--) {
+        // Print spaces
+        for (space = 1; space <= n - i; space++) {
+            printf(" ");
+        }
+        // Print numbers
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int rows;
+    
+    scanf("%d", &rows);
+
+    printDiamond(rows);
+
+    return 0;
 }
