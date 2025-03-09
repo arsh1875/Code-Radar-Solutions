@@ -31,24 +31,3 @@ void PrintArray(char arr[][100], int n) {
         printf("%s\n", arr[i]);
     }
 }
-
-int main() {
-    int n;
-    
-    // Read the number of strings
-    scanf("%d", &n);
-    char arr[n][100]; // Array of strings (each string max 100 characters)
-
-    // Read strings
-    for (int i = 0; i < n; i++) {
-        scanf("%s", arr[i]); // Read a string (no spaces)
-    }
-
-    // Call the selection sort function
-    selectionSort(arr, n);
-
-    // Call PrintArray function to display the sorted strings
-    PrintArray(arr, n);
-
-    return 0;
-}
