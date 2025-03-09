@@ -1,6 +1,6 @@
 // Your code here...#include <stdio.h>
 
-void printPalindromicTriangle(int n) {
+int printPalindromicTriangle(int n) {
     int i, j, space;
 
     for (i = 1; i <= n; i++) {
