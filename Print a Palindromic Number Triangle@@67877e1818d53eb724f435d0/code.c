@@ -1,6 +1,6 @@
-// Your code here...#include <stdio.h>
+#include <stdio.h>
 
-int printPalindromicTriangle(int n) {
+void printPalindromicTriangle(int n) {
     int i, j, space;
 
     for (i = 1; i <= n; i++) {
@@ -23,9 +23,11 @@ int printPalindromicTriangle(int n) {
 int main() {
     int rows;
     
-    scanf("%d", &rows);
+    if (scanf("%d", &rows) != 1 || rows <= 0) { // Input validation
+        printf("Invalid input! Please enter a positive integer.\n");
+        return 1;
+    }
 
     printPalindromicTriangle(rows);
-
     return 0;
 }
