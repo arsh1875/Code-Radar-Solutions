@@ -4,6 +4,7 @@
 
 struct Student {
     int rollNumber;
+    int topscorer;
     char name[50];
     float marks;
 };
