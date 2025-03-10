@@ -12,7 +12,6 @@ int main() {
     int N;
     
     // Read the number of students
-    printf("Enter the number of students: ");
     scanf("%d", &N);
     
     struct Student students[N];
@@ -24,7 +23,6 @@ int main() {
     }
     
     // Display student details
-    printf("\nStudent Records:\n");
     for (int i = 0; i < N; i++) {
         printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
     }
