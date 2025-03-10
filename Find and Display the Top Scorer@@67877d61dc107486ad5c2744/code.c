@@ -1,28 +1,39 @@
-// Your code here...
-// Your code here...
 #include <stdio.h>
-
-struct Student {
-    int rollNumber;
-    char topscorer[50];
-    char name[50];
-    float marks;
-};
+#include <string.h>
 
 int main() {
-    int N;
+    struct student {
+        int rollno;
+        char name[50];
+        float Marks;
+    };
     
-    scanf("%d", &N);
+    struct student stud[1000];
+    int n, topScorerIndex = 0;
     
-    struct Student students[N];
+    scanf("%d", &n);
     
-    for (int i = 1; i < N; i++) {
-        scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
+    for (int i = 0; i < n; i++) {
+
+        scanf("%d", &stud[i].rollno);
+        
+        scanf("%s", stud[i].name);
+        
+        scanf("%f", &stud[i].Marks);
     }
-    if(int i==0||students[i].marks>topscorer.marks){
-        topscorer=students[i];
+    
+    for (int i = 1; i < n; i++) {
+        if (stud[i].Marks > stud[topScorerIndex].Marks) {
+            topScorerIndex = i;
+        }
     }
     
-    printf("Top Scorer:Roll Number:%d,Name:%s,marks:\nd",students[topscorer].rollNumber, students[topscorer].name,stdents[topscorer].marks);
+   
+    
+    printf("Top Scorer: ");
+    printf("Roll Number: %d, ", stud[topScorerIndex].rollno);
+    printf("Name: %s, ", stud[topScorerIndex].name);
+    printf("Marks: %.2f\n", stud[topScorerIndex].Marks);
+    
     return 0;
 }
