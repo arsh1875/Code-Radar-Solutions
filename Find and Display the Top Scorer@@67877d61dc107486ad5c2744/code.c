@@ -23,6 +23,6 @@ int main() {
         topscorer=students[i];
     }
     
-    printf("Top Scorer:");
+    printf("Top Scorer:Roll Number:%d,Name:%s,marks:\nd",students[topscorer].rollNumber, students[topscorer].name,stdents[topscorer].marks);
     return 0;
 }
