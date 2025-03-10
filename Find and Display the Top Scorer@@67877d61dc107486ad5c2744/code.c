@@ -16,7 +16,7 @@ int main() {
     
     struct Student students[N];
     
-    for (int i = 0; i < N; i++) {
+    for (i = 0; i < N; i++) {
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
     }
     if(int i==0||students[i].marks>topscorer.marks){
