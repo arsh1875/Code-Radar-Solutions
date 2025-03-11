@@ -32,7 +32,7 @@ int main() {
         }
     }
     // If student is not found, print a message
-    printf("Count of students scoring above %f: %d\n",rn,found);
+    printf("Count of students scoring above %.2f: %d\n",rn,found);
 
     return 0;
 }
