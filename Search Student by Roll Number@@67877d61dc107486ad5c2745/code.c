@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 struct Student {
@@ -9,8 +8,7 @@ struct Student {
 
 int main() {
     int n;
-    float total_marks = 0.0;
-
+    
     // Input the number of students
     scanf("%d", &n);
 
@@ -19,17 +17,24 @@ int main() {
     // Input student details
     for (int i = 0; i < n; i++) {
         scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
-        
     }
-    int rn;
-    scanf("%d",&rn);
-    for (int i = 0; i < n; i++){
-        if(rn==students[i].roll_number){
-            printf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
-        }
-        else{
-           printf("Student not found");
+
+    int rn, found = 0;
+    scanf("%d", &rn);
+
+    // Search for the student by roll number
+    for (int i = 0; i < n; i++) {
+        if (rn == students[i].roll_number) {
+            printf("%d %s %.2f\n", students[i].roll_number, students[i].name, students[i].marks);
+            found = 1;
+            break;  // Stop searching after finding the student
         }
     }
+
+    // If student is not found, print a message
+    if (!found) {
+        printf("Student not found\n");
+    }
+
     return 0;
 }
