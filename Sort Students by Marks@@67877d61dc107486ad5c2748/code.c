@@ -41,9 +41,8 @@ int main() {
     sortStudents(students, n);
 
     // Print the sorted list of students
-    printf("Students sorted by marks (Descending Order):\n");
     for (int i = 0; i < n; i++) {
-        printf("%d %s %.2f\n", students[i].roll_number, students[i].name, students[i].marks);
+        printf("Roll Number: %d, Name: %s, MArks: %.2f\n", students[i].roll_number, students[i].name, students[i].marks);
     }
 
     return 0;
