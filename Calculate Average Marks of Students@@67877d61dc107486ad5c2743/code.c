@@ -15,5 +15,5 @@ struct detail s1{
     }
 }
 int main(){
-    printf("Average Marks:%.2f",mc);
+    printf("Average Marks:%.2f",mc/n);
 }
