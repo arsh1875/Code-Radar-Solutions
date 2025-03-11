@@ -32,7 +32,7 @@ int main() {
     }
 
     // If student is not found, print a message
-    if (!found) {
+    if (found==0) {
         printf("Student not found\n");
     }
 
