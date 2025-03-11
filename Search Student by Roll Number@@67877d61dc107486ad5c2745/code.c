@@ -24,12 +24,13 @@ int main() {
     }
     int rn;
     scanf("%d",&rn);
-    if(rn==students[i].roll_number){
-        printf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
+    for (int i = 0; i < n; i++){
+        if(rn==students[i].roll_number){
+            printf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
+        }
+        else{
+           printf("Student not found");
+        }
     }
-    else{
-        printf("Student not found");
-    }
-
     return 0;
 }
