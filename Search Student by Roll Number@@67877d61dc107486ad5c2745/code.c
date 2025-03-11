@@ -25,7 +25,7 @@ int main() {
     // Search for the student by roll number
     for (int i = 0; i < n; i++) {
         if (rn == students[i].roll_number) {
-            printf("%d %s %.2f\n", students[i].roll_number, students[i].name, students[i].marks);
+            printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].roll_number, students[i].name, students[i].marks);
             found = 1;
             break;  // Stop searching after finding the student
         }
