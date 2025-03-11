@@ -1,19 +1,28 @@
-// Your code here...
-#include<Stdio.h>
-struct detail s1{
+#include <stdio.h>
+
+struct Student {
+    int roll_number;
+    char name[50];
+    float marks;
+};
+
+int main() {
     int n;
-    int s1.roll;
-    char s1.name;
-    float s1.mark;
-    int mc=0;
-    scanf("%d",&n);
-    for(i=0;i<n;i++){
-        scanf("%d",s1.roll);
-        scanf("%s",s1.name);
-        scanf("%f",s1.mark);
-        mc+=s1.mark;
+    float total_marks = 0.0;
+
+    // Input the number of students
+    scanf("%d", &n);
+
+    struct Student students[n];
+
+    // Input student details
+    for (int i = 0; i < n; i++) {
+        scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
+        total_marks += students[i].marks;
     }
-}
-int main(){
-    printf("Average Marks:%.2f",mc/n);
+
+    // Calculate and print the average marks rounded to two decimal places
+    printf("%.2f\n", total_marks / n);
+
+    return 0;
 }
