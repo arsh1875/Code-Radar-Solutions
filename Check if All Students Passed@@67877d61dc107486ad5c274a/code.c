@@ -22,7 +22,6 @@ int main() {
     }
 
     int found = 0;
-    scanf("%f", &rn);
 
     // Search for the student by roll number
     for (int i = 0; i < n; i++) {
@@ -36,7 +35,7 @@ int main() {
         printf("All Passed");
     }
     else{
-        printf("Not All Passed")
+        printf("Not All Passed");
     }
     return 0;
 }
