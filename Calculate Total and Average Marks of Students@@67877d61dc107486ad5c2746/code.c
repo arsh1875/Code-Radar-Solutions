@@ -23,7 +23,7 @@ int main() {
     }
 
     // Calculate and print the average marks rounded to two decimal places
-    printf("Total Marks: %.2f\n", total_marks / n);
+    printf("Total Marks: %.2f\n", total_marks);
     printf("Average Marks: %.2f\n", total_marks / n);
 
     return 0;
