@@ -28,6 +28,6 @@ int main() {
     }
 
     // Print the student with the lowest marks
-    printf("Student with Minimum Marks: Roll Number :%d,Name: %s, Marks: %.2f\n\n",students[min_index].roll_number,students[min_index].name, students[min_index].marks);
+    printf("Student with Minimum Marks: Roll Number : %d,Name: %s, Marks: %.2f\n\n",students[min_index].roll_number,students[min_index].name, students[min_index].marks);
     return 0;
 }
