@@ -9,7 +9,7 @@ int isPrime(int num) {
     return 1;
 }
 int printPrimesInRange(int num){
-    for (int i = start; i <= end; i++) {
+    for (int i = a; i <= b; i++) {
         if (isPrime(i)) {
             printf("%d ", i);
         }
