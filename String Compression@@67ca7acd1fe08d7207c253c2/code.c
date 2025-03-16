@@ -1,14 +1,7 @@
-// Your code here...
-#include <stdio.h>
-#include <string.h>
-
-// Function to compress a string
-void compressString(char str[]) {
+void compressString(char str[], char compressed[]) {
     int len = strlen(str);
-    if (len == 0) {
-        printf("Empty string.\n");
-        return;
-    }
+    int index = 0; // To track position in compressed string
+
     for (int i = 0; i < len; i++) {
         int count = 1;
 
@@ -18,9 +11,13 @@ void compressString(char str[]) {
             i++;
         }
 
-        // Print character and its count
-        printf("%c%d", str[i], count);
-    }
-    printf("\n");
-}
+        // Append character
+        compressed[index++] = str[i];
 
+        // Append count as a string
+        int num_len = sprintf(&compressed[index], "%d", count);
+        index += num_len;
+    }
+
+    compressed[index] = '\0'; // Null terminate the compressed string
+}
