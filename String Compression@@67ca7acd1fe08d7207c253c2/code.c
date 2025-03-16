@@ -1,7 +1,7 @@
-#include<string.h>
 
+#include <string.h>
 
-// Function to compress a string
+// Function to compress a string based on the given conditions
 void compressString(char str[], char compressed[]) {
     int len = strlen(str);
     int index = 0; // To track position in compressed string
@@ -15,14 +15,12 @@ void compressString(char str[], char compressed[]) {
             i++;
         }
 
-        // Append character normally if count is 1 or 2
-        if (count == 1 || count == 2) {
-            for (int j = 0; j < count; j++) {
-                compressed[index++] = str[i];
-            }
-        } else { // Append character followed by count if more than 2
-            compressed[index++] = str[i];
-            int num_len = sprintf(&compressed[index], "%d", count);
+        // Append character
+        compressed[index++] = str[i];
+
+        // If count is 2 or more, append count + 1
+        if (count >= 2) {
+            int num_len = sprintf(&compressed[index], "%d", count + 1);
             index += num_len;
         }
     }
