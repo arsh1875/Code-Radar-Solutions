@@ -1,4 +1,4 @@
-
+#include<string.h>
 // Function to compress a string
 void compressString(char str[], char compressed[]) {
     int len = strlen(str);
