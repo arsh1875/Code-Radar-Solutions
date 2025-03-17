@@ -26,7 +26,6 @@ int main() {
     fgets(str, sizeof(str), stdin);
     
     // Remove newline character if present
-    str[strcspn(str, "\n")] = '\0';
 
     reverseString(str);
     
