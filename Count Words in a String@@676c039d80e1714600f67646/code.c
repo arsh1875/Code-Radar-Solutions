@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <ctype.h>
 
@@ -20,8 +19,9 @@ int countWords(const char *str) {
 
 int main() {
     char str[100];
-    
-    scanf("%s\n",&str);
+
+    fgets(str, sizeof(str), stdin);  // Read full line including spaces
+
     printf("%d\n", countWords(str));
 
     return 0;
