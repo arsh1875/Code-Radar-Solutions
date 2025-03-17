@@ -34,8 +34,8 @@ int main() {
     }
     
     // Display the total revenue and user count
-    printf("Basic: %d Users, Revenue: %.2f\n", basicCount, basicRevenue);
-    printf("Standard: %d Users, Revenue: %.2f\n", standardCount, standardRevenue);
+    printf("Basic: %d Users, Revenue: %.2f; ", basicCount, basicRevenue);
+    printf("Standard: %d Users, Revenue: %.2f; ", standardCount, standardRevenue);
     printf("Premium: %d Users, Revenue: %.2f\n", premiumCount, premiumRevenue);
     
     return 0;
