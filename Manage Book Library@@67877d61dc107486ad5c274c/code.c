@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
 
@@ -24,6 +23,7 @@ int main() {
     float threshold;
     scanf("%f", &threshold);
     
+    printf("Books above price %.2f:\n", threshold);
     // Display books above the price threshold
     for (int i = 0; i < n; i++) {
         if (books[i].price > threshold) {
