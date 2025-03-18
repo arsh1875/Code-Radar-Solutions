@@ -22,7 +22,7 @@ int main() {
 
     // Calculate and print the total and average marks rounded to two decimal places
     for(int i=0;i<n;i++){
-        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", &students[i].roll_number, students[i].name, &students[i].marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].roll_number, students[i].name, students[i].marks);
     }
     return 0;
 }
