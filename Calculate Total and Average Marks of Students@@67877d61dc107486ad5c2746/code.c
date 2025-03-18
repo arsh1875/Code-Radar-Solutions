@@ -9,7 +9,6 @@ struct Student {
 
 int main() {
     int n;
-    float total_marks = 0.0;
 
     // Input the number of students
     scanf("%d", &n);
