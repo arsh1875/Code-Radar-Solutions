@@ -1,7 +1,7 @@
 // Your code here...
 #include <stdio.h>
 void replace(char *str,char oldl,char newl){
-    for(int i=;i!='\0';i++){
+    for(int i=0;i!='\0';i++){
         if(str[i]==oldl){
             str[i]==newl;
         }
