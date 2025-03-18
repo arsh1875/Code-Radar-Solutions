@@ -3,7 +3,7 @@
 void replace(char *str,char oldl,char newl){
     for(int i=0;i!='\0';i++){
         if(str[i]==oldl){
-            str[i]==newl;
+            str[i]=newl;
         }
     }
 }
