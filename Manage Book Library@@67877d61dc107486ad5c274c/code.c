@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-det struct{
+ struct{
     char title[100];
     char author[100];
     float price;
