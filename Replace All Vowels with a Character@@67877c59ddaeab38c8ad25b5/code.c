@@ -1,5 +1,6 @@
 // Your code here...
 #include <stdio.h>
+#include <string.h>
 
 void replaceLetter(char *str, char newChar) {
     for (int i = 0; str[i] != '\0'; i++) {
