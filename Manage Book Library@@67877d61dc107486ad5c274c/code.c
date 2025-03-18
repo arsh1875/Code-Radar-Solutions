@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<string.h>
- struct{
+ struct book{
     char title[100];
     char author[100];
     float price;
-}book;
+};
 int main(){
     int n;
     scanf("%d",&n);
