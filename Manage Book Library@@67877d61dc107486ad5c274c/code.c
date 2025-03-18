@@ -1,35 +1,22 @@
-#include <stdio.h>
-#include <string.h>
-
-// Define a structure for Book
-typedef struct {
+#include<stdio.h>
+#include<string.h>
+det struct{
     char title[100];
     char author[100];
     float price;
-} Book;
-
-int main() {
+}book;
+int main(){
     int n;
-    scanf("%d", &n);
-    getchar(); // To consume the newline character
-
-    Book books[n];
-    
-    // Input details for each book
-    for (int i = 0; i < n; i++) {
-        scanf("%99s %99s %f", books[i].title, books[i].author, &books[i].price);
+    scanf("%d",&n);
+    book books[200];
+    for(i=0;i<n;i++){
+        scanf("%s %s %f",book[i].title,book[i].author,book[i].price);
     }
-    
-    float threshold;
-    scanf("%f", &threshold);
-    
-    printf("Books above price %.2f:\n", threshold);
-    // Display books above the price threshold
-    for (int i = 0; i < n; i++) {
-        if (books[i].price > threshold) {
-            printf("Title: %s, Author: %s, Price: %.2f\n", books[i].title, books[i].author, books[i].price);
+    int th;
+    scanf("%.2f",&th);
+    for(i=0;i<n;i++){
+        if(book[i].price>th){
+            printf("%s %s %f",book[i].title,book[i].author,book[i].price);
         }
     }
-    
-    return 0;
 }
