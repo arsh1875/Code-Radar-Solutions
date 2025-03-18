@@ -3,6 +3,7 @@
 #include<string.h>
 
 int main(){
+    int j=0;
     char str[100],result[100];
     fgets(str,sizeof(str),stdin);
 
