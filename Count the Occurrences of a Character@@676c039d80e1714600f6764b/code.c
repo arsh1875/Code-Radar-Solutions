@@ -8,7 +8,6 @@ int replaceLetter(char *str, char Char) {
             count+=1;;  // Replace character
         }
     }
-    return count;
 }
 
 int main() {
@@ -19,5 +18,6 @@ int main() {
     scanf(" %c", &Char);  // Read character to replace
 
     replaceLetter(str,Char);
+    printf("%d",count);
     return 0;
 }
