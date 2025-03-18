@@ -19,10 +19,10 @@ int main() {
 
     float th;
     scanf("%f", &th);
-
+    printf("Books above price %.2f",&th);
     for (int i = 0; i < n; i++) {
         if (books[i].price > th) {
-            printf("%s %s %.2f\n", books[i].title, books[i].author, books[i].price);
+            printf("Title: %s, Author: %s, Price: %.2f\n", books[i].title, books[i].author, books[i].price);
         }
     }
 
