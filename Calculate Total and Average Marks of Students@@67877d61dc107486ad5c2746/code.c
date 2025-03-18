@@ -1,3 +1,4 @@
+// Your code here...
 #include <stdio.h>
 
 struct Student {
@@ -13,15 +14,14 @@ int main() {
     scanf("%d", &n);
 
     struct Student students[n];
-    float total_marks = 0.0;  // Initialize total_marks as float
-
+    int total_marks=0.0;
     // Input student details
     for (int i = 0; i < n; i++) {
         scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
         total_marks += students[i].marks;
     }
 
-    // Calculate and print the total and average marks rounded to two decimal places
+    // Calculate and print the average marks rounded to two decimal places
     printf("Total Marks: %.2f\n", total_marks);
     printf("Average Marks: %.2f\n", total_marks / n);
 
