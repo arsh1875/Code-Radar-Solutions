@@ -1,18 +1,25 @@
-// Your code here...
 #include <stdio.h>
-void replace(char *str,char oldl,char newl){
-    for(int i=0;i!='\0';i++){
-        if(str[i]==oldl){
-            str[i]=newl;
+
+void replaceLetter(char *str, char oldChar, char newChar) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == oldChar) {
+            str[i] = newChar;  // Replace character
         }
     }
 }
+
 int main() {
-    char str[100], newl, oldl;
-    fgets(str, sizeof(str), stdin);
-    scanf("%c\n",&oldl);
-    scanf("%c\n",&newl);
-    replace(str,oldl,newl);
-    printf("%s",str);
+    char str[100], oldChar, newChar;
+
+    fgets(str, sizeof(str), stdin);  // Read input string
+
+    scanf(" %c", &oldChar);  // Read character to replace
+
+    scanf(" %c", &newChar);  // Read new character
+
+    replaceLetter(str, oldChar, newChar);
+
+    printf("%s", str);
+
     return 0;
 }
