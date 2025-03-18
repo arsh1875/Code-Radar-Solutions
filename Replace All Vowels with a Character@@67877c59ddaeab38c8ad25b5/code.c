@@ -3,7 +3,7 @@
 
 void replaceLetter(char *str, char newChar) {
     for (int i = 0; str[i] != '\0'; i++) {
-        if (str[i] == "aieouAIEOU") {
+        if (strchr("aieouAIEOU",str[i])) {
             str[i] = newChar;  // Replace character
         }
     }
