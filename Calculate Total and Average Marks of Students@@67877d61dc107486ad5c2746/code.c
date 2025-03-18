@@ -14,11 +14,11 @@ int main() {
     scanf("%d", &n);
 
     struct Student students[n];
-
+    int total_marks;
     // Input student details
     for (int i = 0; i < n; i++) {
         scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
-        int total_marks += students[i].marks;
+        total_marks += students[i].marks;
     }
 
     // Calculate and print the average marks rounded to two decimal places
