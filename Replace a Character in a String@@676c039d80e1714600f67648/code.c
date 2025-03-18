@@ -8,7 +8,7 @@ void replace(char *str,char oldl,char newl){
     }
 }
 int main() {
-    char str[100],char newl,char oldl;
+    char str[100], newl, oldl;
     fgets(str, sizeof(str), stdin);
     scanf("%s\n",&oldl);
     scanf("%s\n",&newl);
