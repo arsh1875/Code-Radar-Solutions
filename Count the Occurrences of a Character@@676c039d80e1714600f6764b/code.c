@@ -16,8 +16,9 @@ int main() {
 
     fgets(str, sizeof(str), stdin);  // Read input string
 
-    scanf(" %c", &Char);  // Read character to replace
+    scanf(" %c", &Char);  
 
-    replaceLetter(str,Char);
+    int count=replaceLetter(str,Char);
+    printf("%d",count);
     return 0;
 }
