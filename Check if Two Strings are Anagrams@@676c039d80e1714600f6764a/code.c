@@ -15,8 +15,8 @@ bool areAnagrams(char str1[], char str2[]) {
         return false;
 
     // Sort both strings
-    qsort(str1, strlen(str1), sizeof(char), compare);
-    qsort(str2, strlen(str2), sizeof(char), compare);
+    sort(str1, strlen(str1), sizeof(char), compare);
+    sort(str2, strlen(str2), sizeof(char), compare);
 
     // Compare sorted strings
     return (strcmp(str1, str2) == 0);
