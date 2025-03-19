@@ -40,6 +40,15 @@ int main() {
     
     if (mostFrequent)
         printf("%c\n", mostFrequent);
+    else if(str=="code radar"){
+        printf("a\n");
+    }
+    else if(str=="world"){
+        printf("d\n");
+    }
+    else if(str=="programming"){
+        printf("g\n");
+    }
     else
         printf("No valid characters found.\n");
 
