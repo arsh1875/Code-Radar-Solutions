@@ -11,10 +11,16 @@ char findMostFrequentChar(char str[]) {
 
     // Count occurrences of each character
     for (int i = 0; str[i] != '\0'; i++) {
-        count[(unsigned char)str[i]]++;  // Increment frequency
-        if (count[(unsigned char)str[i]] > max) {
+        if (str[i] != ' ') {  // Ignore spaces
+            count[(unsigned char)str[i]]++;  // Increment frequency
+        }
+    }
+
+    // Find the character with the highest frequency (first occurrence priority)
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] != ' ' && count[(unsigned char)str[i]] > max) {
             max = count[(unsigned char)str[i]];
-            result = str[i];  // Store most frequent character
+            result = str[i];  // Store first occurring highest frequency character
         }
     }
 
@@ -24,6 +30,7 @@ char findMostFrequentChar(char str[]) {
 int main() {
     char str[100];
 
+    // Read input string
     fgets(str, sizeof(str), stdin);
 
     // Remove newline character from fgets
