@@ -1,6 +1,6 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include <stdbool.h>
 
 // Function to sort a string (using built-in qsort)
@@ -14,9 +14,9 @@ bool areAnagrams(char str1[], char str2[]) {
     if (strlen(str1) != strlen(str2))
         return false;
 
-    // Sort both strings
-    sort(str1, strlen(str1), sizeof(char), compare);
-    sort(str2, strlen(str2), sizeof(char), compare);
+    // Sort both strings using qsort
+    qsort(str1, strlen(str1), sizeof(char), compare);
+    qsort(str2, strlen(str2), sizeof(char), compare);
 
     // Compare sorted strings
     return (strcmp(str1, str2) == 0);
@@ -27,7 +27,6 @@ int main() {
 
     // Read input strings
     scanf("%s", str1);
-
     scanf("%s", str2);
 
     // Check anagram and print result
