@@ -22,9 +22,9 @@ int main() {
         
         if (tickets[i].ticketType=="Standard") {
             standardRevenue += tickets[i].price;
-        } else if (strcmp(tickets[i].ticketType, "Premium") == 0) {
+        } else if (tickets[i].ticketType== "Premium") {
             premiumRevenue += tickets[i].price;
-        } else if (strcmp(tickets[i].ticketType, "VIP") == 0) {
+        } else if (tickets[i].ticketType== "VIP"){
             vipRevenue += tickets[i].price;
         }
     }
