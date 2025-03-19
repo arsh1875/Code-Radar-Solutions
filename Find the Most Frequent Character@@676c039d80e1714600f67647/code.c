@@ -5,22 +5,22 @@
 
 // Function to find the most frequent character
 char findMostFrequentChar(char str[]) {
-    int count[ASCII_SIZE] = {0};  // Array to store frequency of each character
+    int count[ASCII_SIZE] = {0};  // Frequency array
     int max = 0; 
     char result = '\0';
 
-    // Count occurrences of each character
+    // Count occurrences of each character (excluding spaces)
     for (int i = 0; str[i] != '\0'; i++) {
-        if (str[i] != ' ') {  // Ignore spaces
-            count[(unsigned char)str[i]]++;  // Increment frequency
+        if (str[i] != ' ') {  
+            count[(unsigned char)str[i]]++;  
         }
     }
 
-    // Find the character with the highest frequency (first occurrence priority)
+    // Find the first occurring character with the highest frequency
     for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] != ' ' && count[(unsigned char)str[i]] > max) {
             max = count[(unsigned char)str[i]];
-            result = str[i];  // Store first occurring highest frequency character
+            result = str[i];  // Store first highest frequency character
         }
     }
 
