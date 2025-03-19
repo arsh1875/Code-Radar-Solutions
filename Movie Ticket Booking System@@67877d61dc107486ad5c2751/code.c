@@ -20,7 +20,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%s %s %f", tickets[i].movieName, tickets[i].ticketType, &tickets[i].price);
         
-        if (strcmp(tickets[i].ticketType, "Standard") == 0) {
+        if (tickets[i].ticketType=="Standard") {
             standardRevenue += tickets[i].price;
         } else if (strcmp(tickets[i].ticketType, "Premium") == 0) {
             premiumRevenue += tickets[i].price;
