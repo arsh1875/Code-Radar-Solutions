@@ -5,7 +5,7 @@
 // Function to reverse words in a string
 void reverseWords(char str[]) {
     // Step 1: Reverse the entire string
-    strrev(str);
+    strsep(str);
 
     int start = 0, end, len = strlen(str);
 
