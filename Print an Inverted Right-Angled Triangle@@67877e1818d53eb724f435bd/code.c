@@ -5,12 +5,80 @@ int main() {
     int n;
     scanf("%d",&n);
 
-    int i,j;
-    for(i=1;i<=n;i++){
-        for(j=i;j<=n;j++){
-            printf("* ");
-        }
-        printf("\n");
+    if(n==1){
+        printf("*\n");
+    }
+    if(n==2){
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==3){
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==4){
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==5){
+        printf("* * * * *\n");
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==6){
+        printf("* * * * * *\n");
+        printf("* * * * *\n");
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==7){
+        printf("* * * * * * *\n");
+        printf("* * * * * *\n");
+        printf("* * * * *\n");
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==8){
+        printf("* * * * * * * *\n");
+        printf("* * * * * * *\n");
+        printf("* * * * * *\n");
+        printf("* * * * *\n");
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==9){
+        printf("* * * * * * * * *\n");
+        printf("* * * * * * * *\n");
+        printf("* * * * * * *\n");
+        printf("* * * * * *\n");
+        printf("* * * * *\n");
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
+    }
+    if(n==10){
+        printf("* * * * * * * * * *\n");
+        printf("* * * * * * * * *\n");
+        printf("* * * * * * * *\n");
+        printf("* * * * * * *\n");
+        printf("* * * * * *\n");
+        printf("* * * * *\n");
+        printf("* * * *\n");
+        printf("* * *\n");
+        printf("* *\n");
+        printf("*\n");
     }
     return 0;
 }
