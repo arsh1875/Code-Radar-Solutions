@@ -2,8 +2,8 @@
 
 
 int main() {
-    int rows;
-    scanf("%d", &rows);
+    int n;
+    scanf("%d", &n);
 
     if(n=2){
         printf(" * \n");
