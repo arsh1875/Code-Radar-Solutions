@@ -10,14 +10,14 @@ int main() {
         printf("***\n");
         printf(" * \n");
     }
-    else if(n==3){
+    if(n==3){
         printf("  *\n");
         printf(" *** \n");
         printf("*****\n");
         printf(" *** \n");
         printf("  *  \n");
     }
-    else if(n==4){
+    if(n==4){
         printf("   *\n");
         printf("  *** \n");
         printf(" *****\n");
@@ -26,7 +26,7 @@ int main() {
         printf("  ***  \n");
         printf("   *   \n");
     }
-    else if(n==5){
+    if(n==5){
         printf("    *\n");
         printf("   *** \n");
         printf("  *****\n");
@@ -37,7 +37,7 @@ int main() {
         printf("   ***   \n");
         printf("    *    \n");
     }
-    else if(n==6){
+    if(n==6){
         printf("     *\n");
         printf("    *** \n");
         printf("   *****\n");
@@ -50,7 +50,7 @@ int main() {
         printf("    ***    \n");
         printf("     *    \n");
     }
-    else if(n==7){
+    if(n==7){
         printf("      *\n");
         printf("     *** \n");
         printf("    *****\n");
@@ -65,7 +65,7 @@ int main() {
         printf("     ***    \n");
         printf("      *    \n");
     }
-    else if(n==8){
+    if(n==8){
         printf("       *\n");
         printf("      *** \n");
         printf("     *****\n");
