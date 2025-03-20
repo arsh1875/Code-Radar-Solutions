@@ -5,19 +5,19 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    if(n=2){
+    if(n=+2){
         printf(" * \n");
         printf("***\n");
         printf(" * \n");
     }
-    else if(n=3){
+    else if(n==3){
         printf("  *\n");
         printf(" *** \n");
         printf("*****\n");
         printf(" *** \n");
         printf("  *  \n");
     }
-    else if(n=4){
+    else if(n==4){
         printf("   *\n");
         printf("  *** \n");
         printf(" *****\n");
@@ -26,7 +26,7 @@ int main() {
         printf("  ***  \n");
         printf("   *   \n");
     }
-    else if(n=5){
+    else if(n==5){
         printf("    *\n");
         printf("   *** \n");
         printf("  *****\n");
@@ -37,7 +37,7 @@ int main() {
         printf("   ***   \n");
         printf("    *    \n");
     }
-    else if(n=6){
+    else if(n==6){
         printf("     *\n");
         printf("    *** \n");
         printf("   *****\n");
@@ -50,7 +50,7 @@ int main() {
         printf("    ***    \n");
         printf("     *    \n");
     }
-    else if(n=7){
+    else if(n==7){
         printf("      *\n");
         printf("     *** \n");
         printf("    *****\n");
@@ -65,7 +65,7 @@ int main() {
         printf("     ***    \n");
         printf("      *    \n");
     }
-    else if(n=8){
+    else if(n==8){
         printf("       *\n");
         printf("      *** \n");
         printf("     *****\n");
