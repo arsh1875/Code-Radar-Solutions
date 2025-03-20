@@ -5,80 +5,11 @@ int main() {
     int n;
     scanf("%d",&n);
 
-    if(n==1){
-        printf("*\n");
-    }
-    if(n==2){
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==3){
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==4){
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==5){
-        printf("* * * * *\n");
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==6){
-        printf("* * * * * *\n");
-        printf("* * * * *\n");
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==7){
-        printf("* * * * * * *\n");
-        printf("* * * * * *\n");
-        printf("* * * * *\n");
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==8){
-        printf("* * * * * * * *\n");
-        printf("* * * * * * *\n");
-        printf("* * * * * *\n");
-        printf("* * * * *\n");
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==9){
-        printf("* * * * * * * * *\n");
-        printf("* * * * * * * *\n");
-        printf("* * * * * * *\n");
-        printf("* * * * * *\n");
-        printf("* * * * *\n");
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
-    }
-    if(n==10){
-        printf("* * * * * * * * * *\n");
-        printf("* * * * * * * * *\n");
-        printf("* * * * * * * *\n");
-        printf("* * * * * * *\n");
-        printf("* * * * * *\n");
-        printf("* * * * *\n");
-        printf("* * * *\n");
-        printf("* * *\n");
-        printf("* *\n");
-        printf("*\n");
+    for(int i=n;i>=1;i--){
+        for(int j=0;j<=n;j++){
+            printf("*");
+        }
+        printf("\n");
     }
     return 0;
 }
