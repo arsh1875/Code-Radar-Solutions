@@ -5,7 +5,6 @@
 // Function to find the second largest element
 int findSecondLargest(int arr[], int size) {
     if (size < 2) {
-        printf("Not enough elements for second largest.\n");
         return -1;
     }
 
