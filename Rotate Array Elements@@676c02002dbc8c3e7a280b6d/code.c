@@ -1,4 +1,4 @@
-// Your code here...\
+// Your code here...
 #include <stdio.h>
 
 // Function to reverse an array between two indices
