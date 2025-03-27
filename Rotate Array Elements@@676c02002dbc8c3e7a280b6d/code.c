@@ -1,35 +1,43 @@
-// Your code here...
 #include <stdio.h>
 
-// Function to reverse an array between two indices
-void reverse(int arr[], int start, int end) {
-    while (start < end) {
-        int temp = arr[start];
-        arr[start] = arr[end];
-        arr[end] = temp;
-        start++;
-        end--;
-    }
+// Function to left rotate the array by K positions
+void leftRotate(int arr[], int size, int k) {
+    k = k % size; // Ensure k is within bounds
+    int temp[k];
+
+    // Store first K elements in temp
+    for (int i = 0; i < k; i++)
+        temp[i] = arr[i];
+
+    // Shift remaining elements left
+    for (int i = k; i < size; i++)
+        arr[i - k] = arr[i];
+
+    // Move temp elements to end
+    for (int i = 0; i < k; i++)
+        arr[size - k + i] = temp[i];
 }
 
-// Function to rotate the array
-void rotateArray(int arr[], int size, int k, int direction) {
-    if (size == 0 || k % size == 0) return;  // No rotation needed
+// Function to right rotate the array by K positions
+void rightRotate(int arr[], int size, int k) {
     k = k % size; // Ensure k is within bounds
+    int temp[k];
 
-    if (direction == 1) {  // Right Rotation
-        reverse(arr, 0, size - 1);
-        reverse(arr, 0, k - 1);
-        reverse(arr, k, size - 1);
-    } else {  // Left Rotation
-        reverse(arr, 0, k - 1);
-        reverse(arr, k, size - 1);
-        reverse(arr, 0, size - 1);
-    }
+    // Store last K elements in temp
+    for (int i = 0; i < k; i++)
+        temp[i] = arr[size - k + i];
+
+    // Shift remaining elements right
+    for (int i = size - k - 1; i >= 0; i--)
+        arr[i + k] = arr[i];
+
+    // Move temp elements to beginning
+    for (int i = 0; i < k; i++)
+        arr[i] = temp[i];
 }
 
 int main() {
-    int N, K, direction;
+    int N, K;
 
     // Taking array size as input
     scanf("%d", &N);
@@ -38,15 +46,24 @@ int main() {
 
     // Taking array elements as input
     for (int i = 0; i < N; i++) {
-        scanf("%d\n", &arr[i]);
+        scanf("%d", &arr[i]);
     }
 
-    // Taking rotation count and direction
+    // Taking rotation count
     scanf("%d", &K);
-    scanf("%d", &direction);
 
-    // Rotate the array
-    rotateArray(arr, N, K, direction);
+    // Choose rotation type
+    int choice;
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+        leftRotate(arr, N, K);
+    } else if (choice == 2) {
+        rightRotate(arr, N, K);
+    } else {
+        printf("Invalid choice! Exiting program.\n");
+        return 0;
+    }
 
     // Print rotated array
     for (int i = 0; i < N; i++) {
