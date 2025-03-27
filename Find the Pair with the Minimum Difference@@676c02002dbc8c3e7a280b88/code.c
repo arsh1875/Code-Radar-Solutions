@@ -6,8 +6,7 @@
 // Function to find the pair with the minimum difference
 void findMinDifferencePair(int arr[], int size) {
     if (size < 2) {
-        printf("Array must have at least two elements.\n");
-        return;
+        return -1;
     }
 
     // Sort the array first
