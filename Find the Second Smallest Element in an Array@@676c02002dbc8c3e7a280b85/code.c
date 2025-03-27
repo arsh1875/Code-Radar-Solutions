@@ -4,7 +4,7 @@
 
 void findSecondSmallest(int arr[], int size) {
     if (size < 2) {
-        printf("Array must have at least two elements.\n");
+        printf("-1\n");
         return;
     }
 
