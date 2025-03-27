@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-int findSum(int arr[], int size) {
+// Function to find sum of digits of a number
+int sumOfDigits(int num) {
     int sum = 0;
-    for (int i = 0; i < size; i++) {
-        sum += arr[i]; // Add each element to sum
+    while (num > 0) {
+        sum += num % 10;  // Extract last digit and add to sum
+        num /= 10;        // Remove last digit
     }
     return sum;
 }
@@ -21,8 +23,11 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Calculate and print sum
-    printf("%d\n", findSum(arr, N));
+    // Finding and printing sum of digits for each element
+    for (int i = 0; i < N; i++) {
+        printf("%d ", sumOfDigits(arr[i]));
+    }
+    printf("\n");
 
     return 0;
 }
