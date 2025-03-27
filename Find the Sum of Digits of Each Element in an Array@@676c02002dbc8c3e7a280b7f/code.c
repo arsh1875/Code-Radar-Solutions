@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-// Function to find sum of digits of a number
+// Function to find sum of digits of a number (handles negatives)
 int sumOfDigits(int num) {
+    if (num < 0) num = -num;  // Convert negative to positive
     int sum = 0;
     while (num > 0) {
         sum += num % 10;  // Extract last digit and add to sum
