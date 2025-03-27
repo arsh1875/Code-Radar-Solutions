@@ -44,7 +44,7 @@ int main() {
     if (result != -1) {
         printf("%d\n", result);
     } else {
-        printf("No second largest element found.\n");
+        printf("-1\n");
     }
 
     return 0;
