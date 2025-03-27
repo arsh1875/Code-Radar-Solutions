@@ -3,7 +3,6 @@
 
 void findDuplicates(int arr[], int size) {
     int i, j;
-    printf("\nDuplicate elements in the array:\n");
 
     for (i = 0; i < size - 1; i++) {
         for (j = i + 1; j < size; j++) {
