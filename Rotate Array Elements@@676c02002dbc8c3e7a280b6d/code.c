@@ -60,10 +60,7 @@ int main() {
         leftRotate(arr, N, K);
     } else if (choice == 2) {
         rightRotate(arr, N, K);
-    } else {
-        printf("Invalid choice! Exiting program.\n");
-        return 0;
-    }
+    } 
 
     // Print rotated array
     for (int i = 0; i < N; i++) {
