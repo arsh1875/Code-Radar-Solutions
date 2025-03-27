@@ -22,7 +22,7 @@ void findSecondSmallest(int arr[], int size) {
     if (secondSmallest == INT_MAX) {
         printf("-1\n");
     } else {
-        printf(" %d\n", secondSmallest);
+        printf("%d\n", secondSmallest);
     }
 }
 
