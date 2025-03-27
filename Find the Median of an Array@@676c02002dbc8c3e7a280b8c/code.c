@@ -8,7 +8,7 @@ int compare(const void *a, const void *b) {
 }
 
 // Function to find the median
-double findMedian(int arr[], int size) {
+int findMedian(int arr[], int size) {
     // Sort the array
     qsort(arr, size, sizeof(int), compare);
 
@@ -34,7 +34,7 @@ int main() {
     }
 
     // Find and print median
-    printf("%f\n", findMedian(arr, n));
+    printf("%d\n", findMedian(arr, n));
 
     return 0;
 }
