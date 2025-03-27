@@ -7,7 +7,7 @@ void findPairs(int arr[], int size, int target) {
     for (i = 0; i < size - 1; i++) {
         for (j = i + 1; j < size; j++) {
             if (arr[i] + arr[j] == target) {
-                printf("(%d, %d)\n", arr[i], arr[j]);
+                printf("%d %d\n", arr[i], arr[j]);
             }
         }
     }
