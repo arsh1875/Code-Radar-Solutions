@@ -4,9 +4,10 @@
 #include <stdlib.h>
 
 // Function to find the pair with the minimum difference
-int findMinDifferencePair(int arr[], int size) {
+void findMinDifferencePair(int arr[], int size) {
     if (size < 2) {
-        return -1;
+        printf("-1\n");
+        return;
     }
 
     // Sort the array first
