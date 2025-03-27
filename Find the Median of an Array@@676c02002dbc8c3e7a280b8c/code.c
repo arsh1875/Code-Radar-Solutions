@@ -34,7 +34,7 @@ int main() {
     }
 
     // Find and print median
-    printf("%.1f\n", findMedian(arr, n));
+    printf("%f\n", findMedian(arr, n));
 
     return 0;
 }
