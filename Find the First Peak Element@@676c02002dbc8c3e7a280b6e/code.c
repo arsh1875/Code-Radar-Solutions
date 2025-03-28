@@ -16,10 +16,8 @@ int main() {
 
     // Finding min and max values
     for (int i = 1; i < n; i++) { // Start from 1, as arr[0] is already taken
-        while(arr[i]>arr[i+1]){
-            if (arr[i] > max) {
-               max = arr[i];
-            }
+        if (arr[i] > max) {
+            max = arr[i];
         }
         break;
     }
