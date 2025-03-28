@@ -21,6 +21,7 @@ int main() {
                max = arr[i];
             }
         }
+        break;
     }
 
     // Print the min and max elements
