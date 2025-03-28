@@ -1,29 +1,30 @@
-// Your code here...
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
 
-    for(int i=0;i<n;i++){
-        scanf("%d",arr[i]);
+    // Input array elements
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]); // Fixed: Added '&' in scanf
     }
-    int min=0;
-    for(int i=0;i<n;i++){
-        if(arr[i]>arr[i+1]){
-            min=i;
-        }
-    }
-    return min;
-    
-    int max=0;
-    for(int i=0;i<n;i++){
-        if(arr[i]<arr[i+1]){
-            max=i;
-        }
-    }
-    return max;
 
-    printf("%d %d",min,max);
+    // Initialize min and max values to first element
+    int min = arr[0], max = arr[0];
+
+    // Finding min and max values
+    for (int i = 1; i < n; i++) { // Start from 1, as arr[0] is already taken
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    // Print the min and max elements
+    printf("%d %d\n", min, max);
+
+    return 0;
 }
