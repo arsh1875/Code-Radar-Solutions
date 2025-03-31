@@ -6,15 +6,13 @@ int main() {
     if(n==0){
         printf("0");
     }
-    else{
-        while(n>0){
-            int i,sum=0;
-            for(i=1;i<=n;i++){
-                sum+=i;
-            }
-            printf("%d",sum);
-            break;
-        }       
-    }     
+    while(n>0){
+        int sum;
+        for(int i=1;i<=n;i++){
+            sum+=i;
+        }
+        printf("%d",sum);
+        break;
+    }
     return 0;
 }
