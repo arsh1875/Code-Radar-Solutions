@@ -1,56 +1,43 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ASCII_SIZE 256  // Total ASCII characters
+#define MAX 256  // For all ASCII characters
 
-// Function to find the most frequent character
-char findMostFrequentChar(char str[]) {
-    int count[ASCII_SIZE] = {0};  // Frequency array
-    int max = 0; 
-    char result = '\0';
+char mostFrequentChar(const char *str) {
+    int freq[MAX] = {0};
+    int maxFreq = 0;
+    char mostFreqChar = '\0';
 
-    // Count occurrences of each character (excluding spaces)
     for (int i = 0; str[i] != '\0'; i++) {
-        if (str[i] != ' ') {  
-            count[(unsigned char)str[i]]++;  
+        unsigned char ch = str[i];
+        freq[ch]++;
+
+        if (freq[ch] > maxFreq) {
+            maxFreq = freq[ch];
+            mostFreqChar = ch;
         }
     }
 
-    // Find the first occurring character with the highest frequency
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (str[i] != ' ' && count[(unsigned char)str[i]] > max) {
-            max = count[(unsigned char)str[i]];
-            result = str[i];  // Store first highest frequency character
-        }
-    }
-
-    return result;
+    return mostFreqChar;
 }
-
 int main() {
-    char str[100];
+    char str[1000];
 
-    // Read input string
+    printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
-    // Remove newline character from fgets
-    str[strcspn(str, "\n")] = '\0';
+    // Remove trailing newline
+    size_t len = strlen(str);
+    if (len > 0 && str[len - 1] == '\n') {
+        str[len - 1] = '\0';
+    }
 
-    char mostFrequent = findMostFrequentChar(str);
-    
-    if (mostFrequent)
-        printf("%c\n", mostFrequent);
-    else if(str=="code radar"){
-        printf("a\n");
-    }
-    else if(str=="world"){
-        printf("d\n");
-    }
-    else if(str=="programming"){
-        printf("g\n");
-    }
+    char result = mostFrequentChar(str);
+
+    if (result != '\0')
+        printf("%c\n", result);
     else
-        printf("No valid characters found.\n");
+        printf("-\n");
 
     return 0;
 }
