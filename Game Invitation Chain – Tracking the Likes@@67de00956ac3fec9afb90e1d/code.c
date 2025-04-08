@@ -13,13 +13,3 @@ int totalLikes(int n) {
 
     return total;
 }
-
-int main() {
-    int n;
-    scanf("%d", &n);
-
-    int result = totalLikes(n);
-    printf("%d\n", result);
-
-    return 0;
-}
