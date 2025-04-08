@@ -1,33 +1,28 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdbool.h>
 
-// Comparison function for qsort
-int compare(const void *a, const void *b) {
-    return (*(int *)a - *(int *)b);
-}
+void findUniquePairs(int arr[], int n, int target) {
+    bool used[1000] = {false};
 
-void findUniquePairsWithSum(int arr[], int n, int target) {
-    qsort(arr, n, sizeof(int), compare);  // Sort array
+    for (int i = 0; i < n; i++) {
+        if (used[i]) continue;
 
-    int left = 0, right = n - 1;
+        for (int j = i + 1; j < n; j++) {
+            if (used[j]) continue;
 
-    while (left < right) {
-        int sum = arr[left] + arr[right];
-
-        if (sum == target) {
-            printf("%d %d\n", arr[left], arr[right]);
-
-            // Skip duplicates
-            int l_val = arr[left];
-            int r_val = arr[right];
-            while (left < right && arr[left] == l_val) left++;
-            while (left < right && arr[right] == r_val) right--;
-        }
-        else if (sum < target) {
-            left++;
-        }
-        else {
-            right--;
+            if (arr[i] + arr[j] == target) {
+                int a = arr[i];
+                int b = arr[j];
+                // print smaller one first
+                if (a > b) {
+                    int temp = a;
+                    a = b;
+                    b = temp;
+                }
+                printf("%d %d\n", a, b);
+                used[j] = true;  // mark as used
+                break; // move on to next i
+            }
         }
     }
 }
@@ -36,14 +31,14 @@ int main() {
     int n, target;
     scanf("%d", &n);
 
-    int arr[1000];  // upper bound
+    int arr[1000];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     scanf("%d", &target);
 
-    findUniquePairsWithSum(arr, n, target);
+    findUniquePairs(arr, n, target);
 
     return 0;
 }
