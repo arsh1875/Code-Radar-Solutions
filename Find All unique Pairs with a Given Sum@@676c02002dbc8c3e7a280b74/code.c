@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 void findUniquePairs(int arr[], int n, int target) {
-    bool used[1000] = {false};
+    bool used[1000] = {false};  // Marks if an element was used in a pair
 
     for (int i = 0; i < n; i++) {
         if (used[i]) continue;
@@ -11,17 +11,22 @@ void findUniquePairs(int arr[], int n, int target) {
             if (used[j]) continue;
 
             if (arr[i] + arr[j] == target) {
-                int a = arr[i];
-                int b = arr[j];
-                // print smaller one first
+                int a = arr[i], b = arr[j];
+
+                // Print smaller value first
                 if (a > b) {
                     int temp = a;
                     a = b;
                     b = temp;
                 }
+
                 printf("%d %d\n", a, b);
-                used[j] = true;  // mark as used
-                break; // move on to next i
+
+                // Mark both elements as used
+                used[i] = true;
+                used[j] = true;
+
+                break; // move to next i
             }
         }
     }
