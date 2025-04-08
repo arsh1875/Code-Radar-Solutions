@@ -1,23 +1,24 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX 256  // ASCII size
+#define MAX 256  // ASCII characters
 
 char mostFrequentChar(const char *str) {
     int freq[MAX] = {0};
-    int maxFreq = 0;
+    int len = strlen(str);
     char result = '\0';
+    int maxFreq = 0;
 
-    // First pass: count frequency
-    for (int i = 0; str[i] != '\0'; i++) {
+    // Count frequencies
+    for (int i = 0; i < len; i++) {
         unsigned char ch = str[i];
         freq[ch]++;
     }
 
-    // Second pass: find the first character with max frequency
-    for (int i = 0; str[i] != '\0'; i++) {
+    // Traverse again from end to start to find last most frequent
+    for (int i = len - 1; i >= 0; i--) {
         unsigned char ch = str[i];
-        if (freq[ch] > maxFreq) {
+        if (freq[ch] >= maxFreq) {
             maxFreq = freq[ch];
             result = ch;
         }
