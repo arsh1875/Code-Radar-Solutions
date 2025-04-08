@@ -37,7 +37,7 @@ void printLongestPalindrome(char *s) {
 }
 
 int main() {
-    char str[];
+    char str[100];
     scanf("%s",str);
     printLongestPalindrome(str);  // Output can be "bab" or "aba"
     return 0;
