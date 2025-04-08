@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -7,21 +6,20 @@ int isPalindrome(char str[]) {
     char cleaned[1000];
     int len = 0;
 
-    // Remove spaces and copy to cleaned string
+    // Remove spaces and convert to lowercase
     for (int i = 0; str[i] != '\0'; i++) {
         if (str[i] != ' ') {
-            cleaned[len++] = str[i];
+            cleaned[len++] = tolower(str[i]);
         }
     }
-    cleaned[len] = '\0'; // null-terminate the cleaned string
+    cleaned[len] = '\0';
 
-    // Check if cleaned string is a palindrome
+    // Check for palindrome
     for (int i = 0; i < len / 2; i++) {
         if (cleaned[i] != cleaned[len - i - 1])
-            return 0; // not a palindrome
+            return 0;
     }
-
-    return 1; // it's a palindrome
+    return 1;
 }
 
 int main() {
@@ -29,7 +27,7 @@ int main() {
 
     fgets(input, sizeof(input), stdin);
 
-    // Remove trailing newline
+    // Remove trailing newline if present
     input[strcspn(input, "\n")] = 0;
 
     if (isPalindrome(input))
