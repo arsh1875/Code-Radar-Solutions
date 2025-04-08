@@ -22,6 +22,6 @@ int main() {
         }
     }
 
-    printf("No unique character found.\n");
+    printf("-\n");
     return 0;
 }
