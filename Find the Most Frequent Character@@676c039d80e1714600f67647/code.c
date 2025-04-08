@@ -26,13 +26,12 @@ char mostFrequentChar(const char *str) {
 
     return result;
 }
-
 int main() {
     char str[1000];
 
     fgets(str, sizeof(str), stdin);
 
-    // Remove trailing newline
+    // Remove newline
     size_t len = strlen(str);
     if (len > 0 && str[len - 1] == '\n') {
         str[len - 1] = '\0';
