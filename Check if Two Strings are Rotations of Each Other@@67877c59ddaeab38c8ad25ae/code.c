@@ -21,3 +21,14 @@ int areRotations(char *s1, char *s2) {
     free(concat);
     return result;
 }
+int main() {
+    char str1[];scanf("%s",str1);
+    char str2[];scanf("%s",str2);
+
+    if (areRotations(str1, str2))
+        printf("Yes\n");
+    else
+        printf("No\n");
+
+    return 0;
+}
