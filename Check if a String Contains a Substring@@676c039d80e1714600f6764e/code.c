@@ -5,10 +5,8 @@
 int main() {
     char str[1000], sub[100];
 
-    printf("Enter the main string: ");
     fgets(str, sizeof(str), stdin);
 
-    printf("Enter the substring to search: ");
     fgets(sub, sizeof(sub), stdin);
 
     // Remove trailing newline characters if any
