@@ -15,7 +15,7 @@ void countCharFrequency(char *str) {
     // Print character frequencies
     for (int i = 0; i < MAX; i++) {
         if (freq[i] > 0) {
-            printf("'%c': %d\n", i, freq[i]);
+            printf("%c: %d\n", i, freq[i]);
         }
     }
 }
