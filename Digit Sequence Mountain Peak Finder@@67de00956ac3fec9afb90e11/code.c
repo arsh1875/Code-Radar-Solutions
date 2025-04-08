@@ -1,4 +1,3 @@
-// Your code here...
 int mountainPeak(int N) {
     char str[20];
     sprintf(str, "%d", N);
@@ -14,8 +13,11 @@ int mountainPeak(int N) {
     while (i + 1 < len && str[i] < str[i + 1])
         i++;
 
+    // Save peak index
+    int peakIndex = i;
+
     // Peak can't be first or last
-    if (i == 0 || i == len - 1)
+    if (peakIndex == 0 || peakIndex == len - 1)
         return -1;
 
     // Strictly decreasing
@@ -24,7 +26,7 @@ int mountainPeak(int N) {
 
     // If reached end, it's a valid mountain
     if (i == len - 1)
-        return str[i - 1] - '0';  // Peak digit
+        return str[peakIndex] - '0';  // Corrected to actual peak
 
     return -1;
 }
