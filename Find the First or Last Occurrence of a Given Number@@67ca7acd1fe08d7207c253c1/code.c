@@ -1,7 +1,4 @@
-// Your code here...
-
-// Function to find first or last occurrence of an element
-int findOccurrence(int arr[], int n, int target, char choice) {
+int findOccurrence(int arr,int n,int target,int choice){
     int ind=-1;
 
     if(choice=='F'||choice=='f'){
@@ -11,15 +8,14 @@ int findOccurrence(int arr[], int n, int target, char choice) {
         }
         
     }
-    if(choice=='L'||choice=='l'){
-        for(int i=n-1;i>0;i--){
+    else if(choice=='L'||choice=='l'){
+        for(int i=n-1;i>=0;i--){
             arr[i]=target;
             return i;
         }
     }
     else{
         printf("Invalid");
-        return ind;
     }
-    
+    return ind;
 }
