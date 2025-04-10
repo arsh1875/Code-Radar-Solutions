@@ -1,40 +1,29 @@
 #include <stdio.h>
+struct student{
+    int roll;
+    char name[100];
+    float mark;
+}
 
-struct Student {
-    int roll_number;
-    char name[50];
-    float marks;
-};
-
-int main() {
+int main(){
     int n;
-    
-    // Input the number of students
-    scanf("%d", &n);
-
-    struct Student students[n];
-
-    // Input student details
-    for (int i = 0; i < n; i++) {
-        scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
+    scanf("%d",&n);
+    struct student stud[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&stud[i].roll);
+        scanf("%s",stud[i].name);
+        scanf("%f",&stud[i].mark);
     }
-
-    int rn, found = 0;
-    scanf("%d", &rn);
-
-    // Search for the student by roll number
-    for (int i = 0; i < n; i++) {
-        if (rn == students[i].roll_number) {
-            printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].roll_number, students[i].name, students[i].marks);
-            found = 1;
-            break;  // Stop searching after finding the student
+    int en;
+    scanf("%d",&en);
+    for(int i=0;i<n;i++){
+        if(stud[i].roll==en){
+        scanf("Roll Number: %d, ",&stud[i].roll);
+        scanf("Name: %s, ",stud[i].name);
+        scanf("Marks: %.2f",&stud[i].mark);
+        }
+        else{
+            printf("Student not found");
         }
     }
-
-    // If student is not found, print a message
-    if (found==0) {
-        printf("Student not found\n");
-    }
-
-    return 0;
 }
