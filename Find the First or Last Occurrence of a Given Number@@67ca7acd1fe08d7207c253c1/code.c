@@ -17,7 +17,6 @@ int findOccurrence(int arr,int n,int target,int mode){
         }
     }
     else{
-        printf("Invalid");
+        return ind;
     }
-    return ind;
 }
