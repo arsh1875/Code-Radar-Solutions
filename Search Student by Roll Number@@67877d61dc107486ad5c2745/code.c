@@ -18,9 +18,9 @@ int main(){
     scanf("%d",&en);
     for(int i=0;i<n;i++){
         if(stud[i].roll==en){
-        printf("Roll Number: %d, ",&stud[i].roll);
+        printf("Roll Number: %d, ",stud[i].roll);
         printf("Name: %s, ",stud[i].name);
-        printf("Marks: %.2f",&stud[i].mark);
+        printf("Marks: %.2f",stud[i].mark);
         }
         else{
             printf("Student not found");
