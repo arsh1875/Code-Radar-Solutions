@@ -23,7 +23,5 @@ int main(){
         printf("Marks: %.2f",stud[i].mark);
         }
     }
-    else{
        printf("Student not found");
-    }
 }
