@@ -22,8 +22,8 @@ int main(){
         printf("Name: %s, ",stud[i].name);
         printf("Marks: %.2f",stud[i].mark);
         }
-        else{
-            printf("Student not found");
-        }
+    }
+    else{
+       printf("Student not found");
     }
 }
