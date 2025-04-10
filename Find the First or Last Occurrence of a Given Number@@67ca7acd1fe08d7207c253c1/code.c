@@ -19,6 +19,7 @@ int findOccurrence(int arr[], int n, int target, char choice) {
     }
     else{
         printf("Invalid");
+        return ind;
     }
-    return ind;
+    
 }
