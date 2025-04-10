@@ -15,13 +15,17 @@ int main(){
         scanf("%f",&stud[i].mark);
     }
     int en;
+    int found=0;
     scanf("%d",&en);
     for(int i=0;i<n;i++){
         if(stud[i].roll==en){
         printf("Roll Number: %d, ",stud[i].roll);
         printf("Name: %s, ",stud[i].name);
         printf("Marks: %.2f",stud[i].mark);
+        found=1;
         }
     }
-       printf("Student not found");
+    if(!found){
+        printf("Student not found");
+    }
 }
