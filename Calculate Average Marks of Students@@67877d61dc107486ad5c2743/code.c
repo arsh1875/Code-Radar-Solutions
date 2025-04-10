@@ -1,28 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+
 #include <stdio.h>
+struct student{
+    int roll;
+    char name[100];
+    float mark;
+}
 
-struct Student {
-    int roll_number;
-    char name[50];
-    float marks;
-};
-
-int main() {
-    int n;
-    float total_marks = 0.0;
-
-    // Input the number of students
-    scanf("%d", &n);
-
-    struct Student students[n];
-
-    // Input student details
-    for (int i = 0; i < n; i++) {
-        scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
-        total_marks += students[i].marks;
+int main(){
+    int n,float total=0.0;
+    scanf("%d",&n);
+    struct student stud[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&stud[i].roll);
+        scanf("%s",&stud[i].name);
+        scanf("%f",&stud[i].mark);
+        total+=stud[i].mark       
     }
-
-    // Calculate and print the average marks rounded to two decimal places
-    printf("Average Marks: %.2f\n", total_marks / n);
-
-    return 0;
+    printf("Average Marks: %.2f\n",total/n);
 }
