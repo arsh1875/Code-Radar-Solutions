@@ -1,6 +1,6 @@
 
 
-int findOccurrence(int arr,int n,int target,int mode){
+int findOccurrence(int arr[],int n,int target,int mode){
     int ind=-1;
 
     if(mode=='F'||mode=='f'){
