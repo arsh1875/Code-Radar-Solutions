@@ -18,7 +18,8 @@ struct student{
 }
 
 int main(){
-    int n,float total=0.0;
+    int n;
+    float total=0.0;
     scanf("%d",&n);
     struct student stud[n];
     for(int i=0;i<n;i++){
