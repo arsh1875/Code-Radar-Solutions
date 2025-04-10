@@ -26,7 +26,7 @@ int main(){
         scanf("%d",&stud[i].roll);
         scanf("%s",&stud[i].name);
         scanf("%f",&stud[i].mark);
-        total+=stud[i].mark       
+        total+=stud[i].mark;
     }
     printf("Average Marks: %.2f\n",total/n);
 }
